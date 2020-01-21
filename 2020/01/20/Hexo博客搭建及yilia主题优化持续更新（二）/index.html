@@ -31,7 +31,7 @@
 <meta property="og:image" content="https://i.loli.net/2020/01/20/xoWyvZmJC42HLlj.png">
 <meta property="og:image" content="https://i.loli.net/2020/01/20/TygCx8AvB9timfE.png">
 <meta property="article:published_time" content="2020-01-20T12:59:08.000Z">
-<meta property="article:modified_time" content="2020-01-21T07:07:27.918Z">
+<meta property="article:modified_time" content="2020-01-21T11:12:58.607Z">
 <meta property="article:author" content="Ramo Do">
 <meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
@@ -216,7 +216,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">432字</span>
+        <span class="post-count">444字</span>
       </span>
     </span>
 
@@ -290,14 +290,15 @@
 <ul>
 <li>站点下的文件配置</li>
 </ul>
-<p>blog下面的—config.yml:站点配置文件</p>
+<p>blog下面的—config.yml:<code>站点配置文件</code></p>
 <img src="https://i.loli.net/2020/01/20/SzIZUvj8rti3NdA.png" alt="11" style="zoom:50%;">
 
-<p>yilia下面的—config.yml:主题配置文件</p>
+<p>yilia下面的—config.yml:<code>主题配置文件</code></p>
 <img src="https://i.loli.net/2020/01/20/1OyiIX3MthEv47H.png" alt="12" style="zoom:50%;">
 
 <p>在站点配置文件<code>blog/—config.yml</code>加入如下：</p>
-<p>deploy:<br>  type: git<br>  repo: <a href="https://github.com/`（自己的GitHub名）`/`（自己的GitHub名）`.github.io.git" target="_blank" rel="noopener">https://github.com/`（自己的GitHub名）`/`（自己的GitHub名）`.github.io.git</a><br>  branch: master</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:&#x2F;&#x2F;github.com&#x2F;&#96;（自己的GitHub名）&#96;&#x2F;&#96;（自己的GitHub名）&#96;.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
 <p>eg:<img src="https://i.loli.net/2020/01/20/L3SJ5xcyHAkbfgj.png" alt="13" style="zoom:50%;"></p>
 <ul>
 <li>生成SSH增加到GitHub</li>
@@ -308,7 +309,7 @@
 <ul>
 <li><code>创建</code>SSH，一直回车</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;自己的邮箱&quot;</span><br></pre></td></tr></table></figure>
 
 <p>在你的电脑里会生成一个.ssh的文件</p>
 <p><img src="https://i.loli.net/2020/01/20/mHD8iK5369el1So.png" alt="14"></p>
