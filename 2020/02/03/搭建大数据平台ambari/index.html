@@ -28,6 +28,7 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200207172840310.PNG">
 <meta property="og:image" content="https://i.loli.net/2020/02/06/nIUMEVGF48dzDkB.png">
 <meta property="og:image" content="https://i.loli.net/2020/02/06/8Hix4aNzvjPoYb7.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200207174901211.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://i.loli.net/2020/02/06/7UWRF8xTwXrDYy3.png">
 <meta property="og:image" content="https://i.loli.net/2020/02/06/CqOlEMcQSgG8NF3.png">
 <meta property="og:image" content="https://i.loli.net/2020/02/06/er4khQ2xLfBwVXa.png">
@@ -60,7 +61,7 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200207172543639.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200207173110244.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
 <meta property="article:published_time" content="2020-02-03T06:20:39.000Z">
-<meta property="article:modified_time" content="2020-02-07T09:38:57.778Z">
+<meta property="article:modified_time" content="2020-02-07T09:50:51.139Z">
 <meta property="article:author" content="Ramo Do">
 <meta property="article:tag" content="大数据">
 <meta name="twitter:card" content="summary">
@@ -250,7 +251,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">9分</span>
+        <span class="post-count">10分</span>
       </span>
     </span>
 </div>
@@ -350,7 +351,15 @@
 <img src="https://i.loli.net/2020/02/06/8Hix4aNzvjPoYb7.png" alt="37" style="zoom:50%;">
 
 <p><strong>在所有节点：</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# vi &#x2F;etc&#x2F;hosts</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop firewalld</span><br><span class="line">systemctl enable firewalld</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi &#x2F;etc&#x2F;selinux&#x2F;config</span><br></pre></td></tr></table></figure>
+
+<img src="https://img-blog.csdnimg.cn/20200207174901211.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="79c" style="zoom:50%;">
+
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi &#x2F;etc&#x2F;hosts</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#加入以下代码:</span><br><span class="line">192.168.100.10 master</span><br><span class="line">192.168.100.11 node1</span><br><span class="line">192.168.100.12 node2</span><br></pre></td></tr></table></figure>
 
