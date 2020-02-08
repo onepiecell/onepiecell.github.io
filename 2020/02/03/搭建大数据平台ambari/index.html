@@ -26,8 +26,8 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/2020020717382389.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200207172820766.png">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200207172840310.PNG">
-<meta property="og:image" content="https://i.loli.net/2020/02/06/nIUMEVGF48dzDkB.png">
-<meta property="og:image" content="https://i.loli.net/2020/02/06/8Hix4aNzvjPoYb7.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200208182655910.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200208182759516.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200207174901211.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://i.loli.net/2020/02/06/7UWRF8xTwXrDYy3.png">
 <meta property="og:image" content="https://i.loli.net/2020/02/06/CqOlEMcQSgG8NF3.png">
@@ -61,7 +61,7 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200207172543639.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200207173110244.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
 <meta property="article:published_time" content="2020-02-03T06:20:39.000Z">
-<meta property="article:modified_time" content="2020-02-07T09:50:51.139Z">
+<meta property="article:modified_time" content="2020-02-08T16:07:58.312Z">
 <meta property="article:author" content="Ramo Do">
 <meta property="article:tag" content="大数据">
 <meta name="twitter:card" content="summary">
@@ -323,7 +323,7 @@
 <ul>
 <li><h3 id="2-搭建Ambari-前的软件准备"><a href="#2-搭建Ambari-前的软件准备" class="headerlink" title="2. 搭建Ambari 前的软件准备"></a>2. 搭建Ambari 前的软件准备</h3></li>
 </ul>
-<p>包如图所示：</p>
+<p><strong>包如图所示：</strong>（建议下载对应版本的安装包）</p>
 <p>搭建建Ambari 的环境管理平台及后续通过Ambari 自动化搭建Hadoop 集群所需要的软件</p>
 <img src="https://img-blog.csdnimg.cn/20200207172820766.png" alt="34c" style="zoom:50%;">
 
@@ -344,14 +344,15 @@
 <p><strong>Master中：(node1,node2:同样操作，IPADDR分别改为：192.168.100.11，192.168.100.12)</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# vi &#x2F;etc&#x2F;sysconfig&#x2F;network-scripts&#x2F;ifcfg-ens33</span><br><span class="line">[root@master ~]# vi &#x2F;etc&#x2F;sysconfig&#x2F;network-scripts&#x2F;ifcfg-ens34</span><br></pre></td></tr></table></figure>
 
-<img src="https://i.loli.net/2020/02/06/nIUMEVGF48dzDkB.png" alt="36" style="zoom:50%;">
+<p>更改红框里面的</p>
+<img src="https://img-blog.csdnimg.cn/20200208182655910.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="36" style="zoom:50%;">
 
 
 
-<img src="https://i.loli.net/2020/02/06/8Hix4aNzvjPoYb7.png" alt="37" style="zoom:50%;">
+<img src="https://img-blog.csdnimg.cn/20200208182759516.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="37" style="zoom:50%;">
 
 <p><strong>在所有节点：</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop firewalld</span><br><span class="line">systemctl enable firewalld</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop firewalld</span><br><span class="line">systemctl disable firewalld</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi &#x2F;etc&#x2F;selinux&#x2F;config</span><br></pre></td></tr></table></figure>
 
@@ -803,18 +804,17 @@
     
         <!-- 不蒜子统计 -->
         <span>
-                本站总访问量<span id="busuanzi_value_site_pv">502</span>次
+                本站总访问量<span id="busuanzi_value_site_pv"></span>次
         </span>
         <span class="post-meta-divider">|</span>
         <span>
-                本站访客数<span id="busuanzi_value_site_uv">421</span>人
+                本站访客数<span id="busuanzi_value_site_uv"></span>人
         </span>
         <script async src="/busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   
 </footer>
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<!--这一段是不蒜子的访问量统计代码-->
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
 
     </div>
     <script>
