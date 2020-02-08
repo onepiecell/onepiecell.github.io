@@ -9,15 +9,49 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | Hexo</title>
+  <title>部署大数据环境Hadoop | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="大数据管理平台搭建（Hadoop） 搭建步骤：  配置linux Hadoop安装 配置hadoop  所需安装包：（建议下载对应版本的安装包）     centos 下载地址：https:&#x2F;&#x2F;www.centos.org&#x2F;download&#x2F; 百度网盘提取: https:&#x2F;&#x2F;pan.baidu.com&#x2F;s&#x2F;1MO0JzrwK1bf1VU3meBLZeA   提取码：8wfd 一.linux基础配">
+<meta property="og:type" content="article">
+<meta property="og:title" content="部署大数据环境Hadoop">
+<meta property="og:url" content="http://yoursite.com/2020/02/08/%E9%83%A8%E7%BD%B2%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%8E%AF%E5%A2%83Hadoop/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="大数据管理平台搭建（Hadoop） 搭建步骤：  配置linux Hadoop安装 配置hadoop  所需安装包：（建议下载对应版本的安装包）     centos 下载地址：https:&#x2F;&#x2F;www.centos.org&#x2F;download&#x2F; 百度网盘提取: https:&#x2F;&#x2F;pan.baidu.com&#x2F;s&#x2F;1MO0JzrwK1bf1VU3meBLZeA   提取码：8wfd 一.linux基础配">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200209000353777.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200207172840310.PNG">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200209000820990.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200208182655910.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200208182759516.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200207174901211.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200209000855447.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200209000921806.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200209001018564.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200209001050708.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200209001214961.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200209001050708.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200209001214961.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200209001242492.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200209001242492.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200209001259847.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2020020900142050.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200209001439231.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200209001517144.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200209001534306.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://i.loli.net/2020/02/06/h5Vo9ld8pD3ERHP.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/06/8DjEKG345mBOAld.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/06/rFLaT4DEV5qG6cN.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200209001620719.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200209001723714.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200209001742639.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200209001800842.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200209001843144.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
+<meta property="article:published_time" content="2020-02-08T05:56:47.000Z">
+<meta property="article:modified_time" content="2020-02-08T16:22:24.688Z">
 <meta property="article:author" content="Ramo Do">
+<meta property="article:tag" content="大数据">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200209000353777.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -164,38 +198,320 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-部署大数据环境Hadoop" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      部署大数据环境Hadoop
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+
+        
+        
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
 
 <a href="/2020/02/08/%E9%83%A8%E7%BD%B2%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%8E%AF%E5%A2%83Hadoop/" class="archive-article-date">
   	<time datetime="2020-02-08T05:56:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-08</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/08/%E9%83%A8%E7%BD%B2%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%8E%AF%E5%A2%83Hadoop/">部署大数据环境Hadoop</a>
-    </h1>
-  
+        
+        <!-- 开始添加字数统计-->
+        
+          <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">1.6k字</span>
+      </span>
+    </span>
 
-        <div class="article-info info-on-right">
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">8分</span>
+      </span>
+    </span>
+</div>
+
           
+        <!-- 添加完成 -->
+      </header>
+      <!-- 目录内容 -->
+
+    <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+          <span class="btn-bg"></span>
+          <span class="btn-text">文章导航</span>
+          </p>
+	<div id="toc-article" class="toc-article">
+	    <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+		<strong class="toc-title">文章目录</strong>
+           <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#大数据管理平台搭建（Hadoop）"><span class="toc-number">1.</span> <span class="toc-text">大数据管理平台搭建（Hadoop）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一-linux基础配置"><span class="toc-number">1.1.</span> <span class="toc-text">一.linux基础配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-配置ip"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.配置ip</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-配置hosts"><span class="toc-number">1.1.2.</span> <span class="toc-text">2.配置hosts</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二-Hadoop安装"><span class="toc-number">1.2.</span> <span class="toc-text">二.Hadoop安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-把安装包传至master主机中"><span class="toc-number">1.2.1.</span> <span class="toc-text">1.把安装包传至master主机中</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-配置Hadoop环境变量"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.配置Hadoop环境变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三-配置hadoop"><span class="toc-number">1.2.3.</span> <span class="toc-text">三.配置hadoop</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-配置hadoop-env-sh"><span class="toc-number">1.2.4.</span> <span class="toc-text">1.配置hadoop-env.sh</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-配置core-site-xml"><span class="toc-number">1.2.5.</span> <span class="toc-text">2.配置core-site.xml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-配置-hdfs-site-xml"><span class="toc-number">1.2.6.</span> <span class="toc-text">3.配置 hdfs-site.xml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-配置mapred-site-xml"><span class="toc-number">1.2.7.</span> <span class="toc-text">4.配置mapred-site.xml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-配置yarn-sit-xml"><span class="toc-number">1.2.8.</span> <span class="toc-text">5.配置yarn-sit.xml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-配置workers"><span class="toc-number">1.2.9.</span> <span class="toc-text">6.配置workers</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-将master关机克隆出node1，node2"><span class="toc-number">1.2.10.</span> <span class="toc-text">7.将master关机克隆出node1，node2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-ssh免密的配置"><span class="toc-number">1.2.11.</span> <span class="toc-text">8.ssh免密的配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-启动Hadoop平台"><span class="toc-number">1.2.12.</span> <span class="toc-text">9.启动Hadoop平台</span></a></li></ol></li></ol></li></ol>
+         </div>
+   <script type="text/javascript">
+	function showToc(){
+		var toc_article = document.getElementById("toc-article");
+		var show_toc_btn = document.getElementById("show-toc-btn");
+		toc_article.setAttribute("style","display:block");
+		show_toc_btn.setAttribute("style","display:none");
+		};
+	function showBtn(){
+		var toc_article = document.getElementById("toc-article");
+		var show_toc_btn = document.getElementById("show-toc-btn");
+		toc_article.setAttribute("style","display:none");
+		show_toc_btn.setAttribute("style","display:block");
+		};
+   </script>
+      		
+<!-- 目录内容结束 -->
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<h1 id="大数据管理平台搭建（Hadoop）"><a href="#大数据管理平台搭建（Hadoop）" class="headerlink" title="大数据管理平台搭建（Hadoop）"></a>大数据管理平台搭建（Hadoop）</h1></blockquote>
+<p><strong>搭建步骤：</strong></p>
+<ol>
+<li>配置linux</li>
+<li>Hadoop安装</li>
+<li>配置hadoop</li>
+</ol>
+<p><strong>所需安装包</strong>：（建议下载对应版本的安装包）</p>
+<img src="https://img-blog.csdnimg.cn/20200209000353777.png" alt="2c" style="zoom:50%;">
+
+<img src="https://img-blog.csdnimg.cn/20200207172840310.PNG" alt="78c" style="zoom:50%;">
+
+<p>centos 下载地址：<a href="https://www.centos.org/download/" target="_blank" rel="noopener">https://www.centos.org/download/</a></p>
+<p>百度网盘提取: <a href="https://pan.baidu.com/s/1MO0JzrwK1bf1VU3meBLZeA" target="_blank" rel="noopener">https://pan.baidu.com/s/1MO0JzrwK1bf1VU3meBLZeA</a>   提取码：8wfd</p>
+<h2 id="一-linux基础配置"><a href="#一-linux基础配置" class="headerlink" title="一.linux基础配置"></a>一.linux基础配置</h2><ul>
+<li><h3 id="1-配置ip"><a href="#1-配置ip" class="headerlink" title="1.配置ip"></a>1.配置ip</h3><p>安装一台虚拟机如图：</p>
+</li>
+</ul>
+<img src="https://img-blog.csdnimg.cn/20200209000820990.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="1c" style="zoom:50%;">
+
+<p>配置静态ip：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# vi &#x2F;etc&#x2F;sysconfig&#x2F;network-scripts&#x2F;ifcfg-ens33</span><br><span class="line">[root@master ~]# vi &#x2F;etc&#x2F;sysconfig&#x2F;network-scripts&#x2F;ifcfg-ens34</span><br></pre></td></tr></table></figure>
+
+<p>更改红框里面的</p>
+<img src="https://img-blog.csdnimg.cn/20200208182655910.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="36" style="zoom:50%;">
+
+<img src="https://img-blog.csdnimg.cn/20200208182759516.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="37" style="zoom:50%;">
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# service network restart</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-配置hosts"><a href="#2-配置hosts" class="headerlink" title="2.配置hosts"></a>2.配置hosts</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# vi &#x2F;etc&#x2F;hosts</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#写入</span><br><span class="line">192.168.100.10 master</span><br><span class="line">192.168.100.11 node1</span><br><span class="line">192.168.100.12 node2</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# systemctl stop firewalld</span><br><span class="line">[root@master ~]# systemctl disable firewalld</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# vi &#x2F;etc&#x2F;selinux&#x2F;config</span><br></pre></td></tr></table></figure>
+
+<img src="https://img-blog.csdnimg.cn/20200207174901211.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="79c" style="zoom:50%;">
+
+<h2 id="二-Hadoop安装"><a href="#二-Hadoop安装" class="headerlink" title="二.Hadoop安装"></a>二.Hadoop安装</h2><h3 id="1-把安装包传至master主机中"><a href="#1-把安装包传至master主机中" class="headerlink" title="1.把安装包传至master主机中"></a>1.把安装包传至master主机中</h3><p>新建如下目录/opt/bigdata/</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# mkdir &#x2F;opt&#x2F;bigdata</span><br></pre></td></tr></table></figure>
+
+<p>用传输工具把hadoop-3.0.0.tar.gz和JDK上传到master的/root下</p>
+<p>并解压到/opt/bigdata下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# tar -zxvf hadoop-3.0.0.tar.gz -C &#x2F;opt&#x2F;bigdata</span><br><span class="line">[root@master ~]# tar -zxvf jdk-8u161-linux-x64.tar.gz -C &#x2F;opt&#x2F;bigdata</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# cd &#x2F;opt&#x2F;bigdata</span><br><span class="line">[root@master bigdata]# ll</span><br></pre></td></tr></table></figure>
+
+<p>如图：</p>
+<img src="https://img-blog.csdnimg.cn/20200209000855447.png" alt="3c" style="zoom:50%;">
+
+<h3 id="2-配置Hadoop环境变量"><a href="#2-配置Hadoop环境变量" class="headerlink" title="2.配置Hadoop环境变量"></a>2.配置Hadoop环境变量</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# vi &#x2F;etc&#x2F;profile</span><br></pre></td></tr></table></figure>
+
+<p>增加如下内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">export HADOOP_HOME&#x3D;&#x2F;opt&#x2F;bigdata&#x2F;hadoop-3.0.0</span><br><span class="line">export PATH&#x3D;.:$HADOOP_HOME&#x2F;bin:$HADOOP_HOME&#x2F;sbin:$PATH</span><br><span class="line">export JAVA_HOME&#x3D;&#x2F;opt&#x2F;bigdata&#x2F;java1.8.0_161</span><br><span class="line">export PATH&#x3D;.:$HADOOP_HOME&#x2F;bin:$HADOOP_HOME&#x2F;sbin:$PATH</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# source &#x2F;etc&#x2F;profile		#生效环境变量</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# hadoop version			#查看hadoop是否配置成功</span><br></pre></td></tr></table></figure>
+
+<p>如下图配置成功</p>
+<img src="https://img-blog.csdnimg.cn/20200209000921806.png" alt="5c" style="zoom:50%;">
+
+<h3 id="三-配置hadoop"><a href="#三-配置hadoop" class="headerlink" title="三.配置hadoop"></a>三.配置hadoop</h3><h3 id="1-配置hadoop-env-sh"><a href="#1-配置hadoop-env-sh" class="headerlink" title="1.配置hadoop-env.sh"></a>1.配置hadoop-env.sh</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# cd &#x2F;opt&#x2F;bigdata&#x2F;hadoop-3.0.0&#x2F;etc&#x2F;hadoop&#x2F;		#进入Hadoop目录</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@master hadoop]# vi hadoop-env.sh							#编辑文件</span><br></pre></td></tr></table></figure>
+
+<p>定位到export JAVA_HOME操作如图：</p>
+<img src="https://img-blog.csdnimg.cn/20200209001018564.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="6c" style="zoom:50%;">
+
+<p>输入JAVA_HOME的绝对路径</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_HOME&#x3D;&#x2F;opt&#x2F;bigdata&#x2F;jdk1.8.0_161</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/20200209001050708.png" alt="7c" style="zoom:50%;"><img src="https://img-blog.csdnimg.cn/20200209001214961.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="8c"></p>
+<h3 id="2-配置core-site-xml"><a href="#2-配置core-site-xml" class="headerlink" title="2.配置core-site.xml"></a>2.配置core-site.xml</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@master hadoop]# vi core-site.xml</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;configuration&gt;</span><br><span class="line"></span><br><span class="line">&lt;!—在此处参加配置信息--&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;configuration&gt;</span><br></pre></td></tr></table></figure>
+
+<p>添加如下内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;property&gt;</span><br><span class="line"> &lt;name&gt;fs.default.name&lt;&#x2F;name&gt;</span><br><span class="line"> &lt;value&gt;hdfs:&#x2F;&#x2F;master:9000&lt;&#x2F;value&gt;</span><br><span class="line">&lt;&#x2F;property&gt;</span><br><span class="line">&lt;property&gt;</span><br><span class="line"> &lt;name&gt;hadoop.temp.dir&lt;&#x2F;name&gt;</span><br><span class="line"> &lt;value&gt;&#x2F;opt&#x2F;bigdata&#x2F;hadoop-3.0.0&#x2F;tmp&lt;&#x2F;value&gt;</span><br><span class="line">&lt;&#x2F;property&gt;</span><br></pre></td></tr></table></figure>
+
+<p>如图：</p>
+<p><img src="https://img-blog.csdnimg.cn/20200209001050708.png" alt="7c" style="zoom:50%;"><img src="https://img-blog.csdnimg.cn/20200209001214961.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="8c">)<img src="https://img-blog.csdnimg.cn/20200209001242492.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="9c"></p>
+<h3 id="3-配置-hdfs-site-xml"><a href="#3-配置-hdfs-site-xml" class="headerlink" title="3.配置 hdfs-site.xml"></a>3.配置 hdfs-site.xml</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@master hadoop]# vi hdfs-site.xml</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;configuration&gt;</span><br><span class="line"></span><br><span class="line">&lt;!—在此处参加配置信息--&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;configuration&gt;</span><br></pre></td></tr></table></figure>
+
+<p>配置内容如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;property&gt;</span><br><span class="line"> &lt;name&gt;dfs.replication&lt;&#x2F;name&gt;</span><br><span class="line"> &lt;value&gt;2&lt;&#x2F;value&gt;</span><br><span class="line">&lt;&#x2F;property&gt;</span><br><span class="line">&lt;property&gt;</span><br><span class="line"> &lt;name&gt;dfs.namenode.name.dir&lt;&#x2F;name&gt;</span><br><span class="line"> &lt;value&gt;&#x2F;opt&#x2F;bigdata&#x2F;hadoop-3.0.0&#x2F;hdfs&#x2F;name&lt;&#x2F;value&gt;</span><br><span class="line">&lt;&#x2F;property&gt;</span><br><span class="line">&lt;property&gt;</span><br><span class="line"> &lt;name&gt;dfs.datanode.data.dir&lt;&#x2F;name&gt;</span><br><span class="line"> &lt;value&gt;&#x2F;opt&#x2F;bigdata&#x2F;hadoop-3.0.0&#x2F;hdfs&#x2F;name&lt;&#x2F;value&gt;</span><br><span class="line">&lt;&#x2F;property&gt;</span><br><span class="line">&lt;property&gt;</span><br><span class="line"> &lt;name&gt;dfs.namenode.secondary.http-address&lt;&#x2F;name&gt;</span><br><span class="line"> &lt;value&gt;node1:9001&lt;&#x2F;value&gt;</span><br><span class="line">&lt;&#x2F;property&gt;</span><br><span class="line">&lt;property&gt;</span><br><span class="line"> &lt;name&gt;dfs.http.address&lt;&#x2F;name&gt;</span><br><span class="line"> &lt;value&gt;0.0.0.0:50070&lt;&#x2F;value&gt;</span><br><span class="line">&lt;&#x2F;property&gt;</span><br></pre></td></tr></table></figure>
+
+<p>如图：</p>
+<img src="https://img-blog.csdnimg.cn/20200209001242492.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="9c" style="zoom:50%;">
+
+<h3 id="4-配置mapred-site-xml"><a href="#4-配置mapred-site-xml" class="headerlink" title="4.配置mapred-site.xml"></a>4.配置mapred-site.xml</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@master hadoop]# vi mapred-site.xml</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;configuration&gt;</span><br><span class="line"></span><br><span class="line">&lt;!—在此处参加配置信息--&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;configuration&gt;</span><br></pre></td></tr></table></figure>
+
+<p>配置内容如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&lt;property&gt;</span><br><span class="line">  &lt;name&gt;mapred.task.tracker.http.address&lt;&#x2F;name&gt;</span><br><span class="line">  &lt;value&gt;0.0.0.0:50060&lt;&#x2F;value&gt;</span><br><span class="line">&lt;&#x2F;property&gt;</span><br><span class="line">&lt;property&gt;</span><br><span class="line">  &lt;name&gt;mapreduce.framework.name&lt;&#x2F;name&gt;</span><br><span class="line">  &lt;value&gt;yarn&lt;&#x2F;value&gt;</span><br><span class="line">&lt;&#x2F;property&gt;</span><br><span class="line">&lt;property&gt;</span><br><span class="line">  &lt;name&gt;mapreduce.application.classpath&lt;&#x2F;name&gt;</span><br><span class="line">  &lt;value&gt;</span><br><span class="line">      &#x2F;opt&#x2F;bigdata&#x2F;hadoop-3.0.0&#x2F;etc&#x2F;hadoop,</span><br><span class="line">      &#x2F;opt&#x2F;bigdata&#x2F;hadoop-3.0.0&#x2F;etc&#x2F;hadoop&#x2F;common&#x2F;*,</span><br><span class="line">      &#x2F;opt&#x2F;bigdata&#x2F;hadoop-3.0.0&#x2F;etc&#x2F;hadoop&#x2F;common&#x2F;lib&#x2F;*,</span><br><span class="line">      &#x2F;opt&#x2F;bigdata&#x2F;hadoop-3.0.0&#x2F;etc&#x2F;hadoop&#x2F;hdfs&#x2F;*,</span><br><span class="line">      &#x2F;opt&#x2F;bigdata&#x2F;hadoop-3.0.0&#x2F;etc&#x2F;hadoop&#x2F;hdfs&#x2F;lib&#x2F;*,</span><br><span class="line">      &#x2F;opt&#x2F;bigdata&#x2F;hadoop-3.0.0&#x2F;etc&#x2F;hadoop&#x2F;mapreduce&#x2F;*,</span><br><span class="line">      &#x2F;opt&#x2F;bigdata&#x2F;hadoop-3.0.0&#x2F;etc&#x2F;hadoop&#x2F;yarn&#x2F;*,</span><br><span class="line">      &#x2F;opt&#x2F;bigdata&#x2F;hadoop-3.0.0&#x2F;etc&#x2F;hadoop&#x2F;yarn&#x2F;lib&#x2F;*</span><br><span class="line">  &lt;&#x2F;value&gt;</span><br><span class="line">&lt;&#x2F;property&gt;</span><br></pre></td></tr></table></figure>
+
+<img src="https://img-blog.csdnimg.cn/20200209001259847.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="10c" style="zoom:50%;">
+
+<h3 id="5-配置yarn-sit-xml"><a href="#5-配置yarn-sit-xml" class="headerlink" title="5.配置yarn-sit.xml"></a>5.配置yarn-sit.xml</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@master hadoop]# vi yarn-site.xml</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;configuration&gt;</span><br><span class="line"></span><br><span class="line">&lt;!—在此处参加配置信息--&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;configuration&gt;</span><br></pre></td></tr></table></figure>
+
+<p>配置内容如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;property&gt;</span><br><span class="line">        &lt;name&gt;yarn.nodemanager.aux-services&lt;&#x2F;name&gt;</span><br><span class="line">        &lt;value&gt;mapreduce_shuffle&lt;&#x2F;value&gt;</span><br><span class="line">&lt;&#x2F;property&gt;</span><br><span class="line">&lt;property&gt;</span><br><span class="line">        &lt;name&gt;yarn.resourcemanager.webapp.address&lt;&#x2F;name&gt;</span><br><span class="line">        &lt;value&gt;master:8099&lt;&#x2F;value&gt;</span><br><span class="line">&lt;&#x2F;property&gt;</span><br></pre></td></tr></table></figure>
+
+<img src="https://img-blog.csdnimg.cn/2020020900142050.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="11c" style="zoom:50%;">
+
+<h3 id="6-配置workers"><a href="#6-配置workers" class="headerlink" title="6.配置workers"></a>6.配置workers</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# vi workers</span><br></pre></td></tr></table></figure>
+
+<p>在文件works中添加节点名</p>
+<img src="https://img-blog.csdnimg.cn/20200209001439231.png" alt="12c" style="zoom:50%;">
+
+<h3 id="7-将master关机克隆出node1，node2"><a href="#7-将master关机克隆出node1，node2" class="headerlink" title="7.将master关机克隆出node1，node2"></a>7.将master关机克隆出node1，node2</h3><p>将node1和node2的ip分别改为：<code>192.168.100.11</code>和<code>192.168.100.12</code></p>
+<p><strong>所有node执行：</strong>（node2一样修改）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@node1 ~]# vi &#x2F;etc&#x2F;sysconfig&#x2F;network-scripts&#x2F;ifcfg-ens33</span><br><span class="line">[root@node1 ~]# vi &#x2F;etc&#x2F;sysconfig&#x2F;network-scripts&#x2F;ifcfg-ens34</span><br><span class="line">[root@node1 ~]# service network restart</span><br></pre></td></tr></table></figure>
+
+<img src="https://img-blog.csdnimg.cn/20200209001517144.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="13" style="zoom:50%;">
+
+<img src="https://img-blog.csdnimg.cn/20200209001534306.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="14c" style="zoom:50%;">
+
+<p>node节点修改主机名：（node2一样修改）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# hostnamectl set-hostname node1</span><br><span class="line">[root@master ~]# bash</span><br><span class="line">[root@node1 ~]#</span><br></pre></td></tr></table></figure>
+
+<h3 id="8-ssh免密的配置"><a href="#8-ssh免密的配置" class="headerlink" title="8.ssh免密的配置"></a>8.ssh免密的配置</h3><p><strong>master中：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]ssh-keygen #连续按三个空格</span><br></pre></td></tr></table></figure>
+
+<img src="https://i.loli.net/2020/02/06/h5Vo9ld8pD3ERHP.png" alt="69" style="zoom:50%;">
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]ssh-copy-id master</span><br></pre></td></tr></table></figure>
+
+<img src="https://i.loli.net/2020/02/06/8DjEKG345mBOAld.png" alt="70" style="zoom:50%;">
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]ssh-copy-id node1</span><br><span class="line">[root@master ~]ssh-copy-id node2</span><br></pre></td></tr></table></figure>
+
+<p>ssh 登录远程主机查看是否成功:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# ssh node1</span><br><span class="line">[root@node1 ~]# ssh node2</span><br><span class="line">[root@node2 ~]# ssh master</span><br><span class="line">[root@master ~]#</span><br></pre></td></tr></table></figure>
+
+<img src="https://i.loli.net/2020/02/06/rFLaT4DEV5qG6cN.png" alt="43" style="zoom:50%;">
+
+<h3 id="9-启动Hadoop平台"><a href="#9-启动Hadoop平台" class="headerlink" title="9.启动Hadoop平台"></a>9.启动Hadoop平台</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">start-all.sh		#启动hadoop</span><br></pre></td></tr></table></figure>
+
+<p>报错如下：</p>
+<p>Starting namenodes on [master]</p>
+<p>ERROR: Attempting to operate on hdfs namenode as root</p>
+<p>ERROR: but there is no HDFS_NAMENODE_USER defined. Aborting operation.</p>
+<p>Starting datanodes</p>
+<p>ERROR: Attempting to operate on hdfs datanode as root</p>
+<p>ERROR: but there is no HDFS_DATANODE_USER defined. Aborting operation.</p>
+<p>Starting secondary namenodes [node1]</p>
+<p>ERROR: Attempting to operate on hdfs secondarynamenode as root</p>
+<p>ERROR: but there is no HDFS_SECONDARYNAMENODE_USER defined. Aborting operation.</p>
+<p>Starting resourcemanager</p>
+<p>ERROR: Attempting to operate on yarn resourcemanager as root</p>
+<p>ERROR: but there is no YARN_RESOURCEMANAGER_USER defined. Aborting operation.</p>
+<p>Starting nodemanagers</p>
+<p>ERROR: Attempting to operate on yarn nodemanager as root</p>
+<p>ERROR: but there is no YARN_NODEMANAGER_USER defined. Aborting operation</p>
+<p>解决：</p>
+<p>需要修改<code>start-dfs.sh</code> <code>stop-dfs.sh</code> <code>start-yarn.sh</code> <code>stop-yarn.sh</code>四个文件的用户名</p>
+<p><strong>所有节点：</strong></p>
+<p>1.修改<code>start-dfs.sh</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@master &#x2F;]# cd &#x2F;opt&#x2F;bigdata&#x2F;hadoop-3.0.0&#x2F;sbin&#x2F;</span><br><span class="line">[root@master sbin]# vi start-dfs.sh</span><br></pre></td></tr></table></figure>
+
+<p>头部加入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">HDFS_DATANODE_USER&#x3D;root</span><br><span class="line">HADOOP_SECURE_DN_USER&#x3D;hdfs</span><br><span class="line">HDFS_NAMENODE_USER&#x3D;root</span><br><span class="line">HDFS_SECONDARYNAMENODE_USER&#x3D;root</span><br></pre></td></tr></table></figure>
+
+<img src="https://img-blog.csdnimg.cn/20200209001620719.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="15c" style="zoom:50%;">
+
+<p>2.修改stop-dfs.sh</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@master sbin]# vi stop-dfs.sh</span><br></pre></td></tr></table></figure>
+
+<p>头部加入：（和上面一样）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">HDFS_DATANODE_USER&#x3D;root</span><br><span class="line">HADOOP_SECURE_DN_USER&#x3D;hdfs</span><br><span class="line">HDFS_NAMENODE_USER&#x3D;root</span><br><span class="line">HDFS_SECONDARYNAMENODE_USER&#x3D;root</span><br></pre></td></tr></table></figure>
+
+<p>3.修改start-yarn.sh</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@master sbin]# vi start-yarn.sh</span><br></pre></td></tr></table></figure>
+
+<p>头部加入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">YARN_RESOURCEMANAGER_USER&#x3D;root</span><br><span class="line">HADOOP_SECURE_DN_USER&#x3D;yarn</span><br><span class="line">YARN_NODEMANAGER_USER&#x3D;root</span><br></pre></td></tr></table></figure>
+
+<p>4.修改stop-yarn.sh</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@master sbin]# vi stop-yarn.sh</span><br></pre></td></tr></table></figure>
+
+<p>头部加入：（和上面一样）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">YARN_RESOURCEMANAGER_USER&#x3D;root</span><br><span class="line">HADOOP_SECURE_DN_USER&#x3D;yarn</span><br><span class="line">YARN_NODEMANAGER_USER&#x3D;root</span><br></pre></td></tr></table></figure>
+
+<p>启动hadoop</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@master sbin]# start-all.sh</span><br></pre></td></tr></table></figure>
+
+<img src="https://img-blog.csdnimg.cn/20200209001723714.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="16c" style="zoom:50%;">
+
+<img src="https://img-blog.csdnimg.cn/20200209001742639.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="17c" style="zoom:50%;">
+
+<img src="https://img-blog.csdnimg.cn/20200209001800842.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="18c" style="zoom:50%;">
+
+<p>如果启动不了namenode 和 datanode，把所有节点的 /opt/bigdata/hadoop-3.0.0/hdfs/name/ 里面数据清空(若为空就不管)；输入命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hadoop namenode -format</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">start-all.sh</span><br></pre></td></tr></table></figure>
+
+<p>访问网页：<a href="http://192.168.100.10:50070" target="_blank" rel="noopener">http://192.168.100.10:50070</a></p>
+<img src="https://img-blog.csdnimg.cn/20200209001843144.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="19c" style="zoom:50%;">
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -207,7 +523,7 @@
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -220,221 +536,145 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/08/%E9%83%A8%E7%BD%B2%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%8E%AF%E5%A2%83Hadoop/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-postc">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
 
-<a href="/2020/02/03/%E6%90%AD%E5%BB%BA%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%B9%B3%E5%8F%B0ambari/" class="archive-article-date">
-  	<time datetime="2020-02-03T06:20:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-03</time>
-</a>
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2020/02/03/%E6%90%AD%E5%BB%BA%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%B9%B3%E5%8F%B0ambari/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">搭建大数据平台ambari</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/02/03/%E6%90%AD%E5%BB%BA%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%B9%B3%E5%8F%B0ambari/">搭建大数据平台ambari</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">大数据</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/大数据//" class="article-tag-list-link color4">大数据</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#大数据管理平台搭建（Hadoop）"><span class="toc-number">1.</span> <span class="toc-text">大数据管理平台搭建（Hadoop）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一-linux基础配置"><span class="toc-number">1.1.</span> <span class="toc-text">一.linux基础配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-配置ip"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.配置ip</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-配置hosts"><span class="toc-number">1.1.2.</span> <span class="toc-text">2.配置hosts</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二-Hadoop安装"><span class="toc-number">1.2.</span> <span class="toc-text">二.Hadoop安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-把安装包传至master主机中"><span class="toc-number">1.2.1.</span> <span class="toc-text">1.把安装包传至master主机中</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-配置Hadoop环境变量"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.配置Hadoop环境变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三-配置hadoop"><span class="toc-number">1.2.3.</span> <span class="toc-text">三.配置hadoop</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-配置hadoop-env-sh"><span class="toc-number">1.2.4.</span> <span class="toc-text">1.配置hadoop-env.sh</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-配置core-site-xml"><span class="toc-number">1.2.5.</span> <span class="toc-text">2.配置core-site.xml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-配置-hdfs-site-xml"><span class="toc-number">1.2.6.</span> <span class="toc-text">3.配置 hdfs-site.xml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-配置mapred-site-xml"><span class="toc-number">1.2.7.</span> <span class="toc-text">4.配置mapred-site.xml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-配置yarn-sit-xml"><span class="toc-number">1.2.8.</span> <span class="toc-text">5.配置yarn-sit.xml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-配置workers"><span class="toc-number">1.2.9.</span> <span class="toc-text">6.配置workers</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-将master关机克隆出node1，node2"><span class="toc-number">1.2.10.</span> <span class="toc-text">7.将master关机克隆出node1，node2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-ssh免密的配置"><span class="toc-number">1.2.11.</span> <span class="toc-text">8.ssh免密的配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-启动Hadoop平台"><span class="toc-number">1.2.12.</span> <span class="toc-text">9.启动Hadoop平台</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-
-<a href="/2020/01/21/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8Ayilia%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%88%E4%B8%89%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-01-21T14:19:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/01/21/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8Ayilia%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%88%E4%B8%89%EF%BC%89/">Hexo博客搭建及yilia主题优化持续更新（三）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/hexo//" class="article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-
-<a href="/2020/01/20/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8Ayilia%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%88%E4%BA%8C%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-01-20T12:59:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/01/20/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8Ayilia%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%88%E4%BA%8C%EF%BC%89/">Hexo博客搭建及yilia主题优化持续更新（二）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/hexo//" class="article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+    <section id="comments" class="comments">
+      <style>
+        .comments{margin:30px;padding:10px;background:#fff}
+        @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+      </style>
+      <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'true' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "dKcH2BBklIsbcELVaTXbgn0J-gzGzoHsz",
+            app_key: "oGK8iacXoH0v8OIsKwGS0LDj",
+            placeholder: "Just go go",
+            avatar:"retro"
+        });
+    }
+</script>
+  </section>
 
-<a href="/2020/01/20/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8Ayilia%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E6%8C%81%E7%BB%AD%E8%B7%9F%E6%96%B0(%E4%B8%80)/" class="archive-article-date">
-  	<time datetime="2020-01-20T06:31:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/01/20/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8Ayilia%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E6%8C%81%E7%BB%AD%E8%B7%9F%E6%96%B0(%E4%B8%80)/">Hexo博客搭建及yilia主题优化持续更新（一）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/hexo//" class="article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
+
+
 
 
           </div>
@@ -470,8 +710,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
