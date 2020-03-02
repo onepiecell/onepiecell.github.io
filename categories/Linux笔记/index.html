@@ -9,63 +9,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>搭建大数据平台ambari | Hexo</title>
+  <title>Category: Linux笔记 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="大数据管理平台搭建（ambari） 搭建步骤：  基础配置 Ambari安装配置 部署 Hadoop 大数据集群">
-<meta property="og:type" content="article">
-<meta property="og:title" content="搭建大数据平台ambari">
-<meta property="og:url" content="http://yoursite.com/2020/02/03/%E6%90%AD%E5%BB%BA%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%B9%B3%E5%8F%B0ambari/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/categories/Linux%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="大数据管理平台搭建（ambari） 搭建步骤：  基础配置 Ambari安装配置 部署 Hadoop 大数据集群">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://i.loli.net/2020/02/03/GTgjcbZNP3vlVUt.png">
-<meta property="og:image" content="https://i.loli.net/2020/02/06/uqwl8X9KPokgn63.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2020020700081965.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200207172659226.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200207172756898.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2020020717382389.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200207172820766.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200207172840310.PNG">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200208182655910.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200208182759516.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200207174901211.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://i.loli.net/2020/02/06/7UWRF8xTwXrDYy3.png">
-<meta property="og:image" content="https://i.loli.net/2020/02/06/CqOlEMcQSgG8NF3.png">
-<meta property="og:image" content="https://i.loli.net/2020/02/06/er4khQ2xLfBwVXa.png">
-<meta property="og:image" content="https://i.loli.net/2020/02/06/65Vc94ejDx83rYF.png">
-<meta property="og:image" content="https://i.loli.net/2020/02/06/74ejXpSwCm5zL96.png">
-<meta property="og:image" content="https://i.loli.net/2020/02/06/QUk42FMthRVaI5C.png">
-<meta property="og:image" content="https://i.loli.net/2020/02/06/h5Vo9ld8pD3ERHP.png">
-<meta property="og:image" content="https://i.loli.net/2020/02/06/8DjEKG345mBOAld.png">
-<meta property="og:image" content="https://i.loli.net/2020/02/06/rFLaT4DEV5qG6cN.png">
-<meta property="og:image" content="https://i.loli.net/2020/02/06/icCvQbqfRBky975.png">
-<meta property="og:image" content="https://i.loli.net/2020/02/06/9Jur4j257NgCD1X.png">
-<meta property="og:image" content="https://i.loli.net/2020/02/06/RwfQhqi9WUSAbjX.png">
-<meta property="og:image" content="https://i.loli.net/2020/02/06/hsdAPk2QDbCrTf1.png">
-<meta property="og:image" content="https://i.loli.net/2020/02/06/qfbglNu5iAESWrd.png">
-<meta property="og:image" content="https://i.loli.net/2020/02/06/jAGWUByCMp8hVOF.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200206234330245.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2020020623493112.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200206234549701.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200206234612841.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200207000341190.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200206234732619.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200206234949448.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200206235007346.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200206235027700.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200206235044292.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200206235103399.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200206235337726.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200206235356741.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200206235420473.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200207172543639.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200207173110244.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70">
-<meta property="article:published_time" content="2020-02-03T06:20:39.000Z">
-<meta property="article:modified_time" content="2020-02-23T09:33:22.210Z">
 <meta property="article:author" content="Ramo Do">
-<meta property="article:tag" content="大数据">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://i.loli.net/2020/02/03/GTgjcbZNP3vlVUt.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -206,598 +158,73 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="postc-搭建大数据平台ambari" class="article article-type-postc " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      搭建大数据平台ambari
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2020" class="archive-year">2020</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	
+
+<a href="/2020/03/03/%E3%80%8ALinux%E5%B0%B1%E8%AF%A5%E8%BF%99%E6%A0%B7%E5%AD%A6%E3%80%8B1-5%E7%AB%A0/" class="archive-article-date">
+  	<time datetime="2020-03-03T04:07:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-03</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2020/03/03/%E3%80%8ALinux%E5%B0%B1%E8%AF%A5%E8%BF%99%E6%A0%B7%E5%AD%A6%E3%80%8B1-5%E7%AB%A0/">《Linux就该这样学》1~5章</a>
     </h1>
   
 
-        
-        
-        <!-- 不蒜子统计 -->
-        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
-              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
-        </span>
-
-
-<a href="/2020/02/03/%E6%90%AD%E5%BB%BA%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%B9%B3%E5%8F%B0ambari/" class="archive-article-date">
-  	<time datetime="2020-02-03T06:20:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-03</time>
-</a>
-        
-        <!-- 开始添加字数统计-->
-        
-          <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">2k字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">10分</span>
-      </span>
-    </span>
-</div>
-
+        <div class="article-info info-on-right">
           
-        <!-- 添加完成 -->
-      </header>
-      <!-- 目录内容 -->
-
-    <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
-          <span class="btn-bg"></span>
-          <span class="btn-text">文章导航</span>
-          </p>
-	<div id="toc-article" class="toc-article">
-	    <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
-		<strong class="toc-title">文章目录</strong>
-           <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#大数据管理平台搭建（ambari）"><span class="toc-number">1.</span> <span class="toc-text">大数据管理平台搭建（ambari）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一-基础配置"><span class="toc-number">1.1.</span> <span class="toc-text">一.基础配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Master要求虚拟机硬盘需大于50G，内存3G以上，node1和node2一样"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.Master要求虚拟机硬盘需大于50G，内存3G以上，node1和node2一样</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-搭建Ambari-前的软件准备"><span class="toc-number">1.1.2.</span> <span class="toc-text">2. 搭建Ambari 前的软件准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-配置linux网卡"><span class="toc-number">1.1.3.</span> <span class="toc-text">3.配置linux网卡</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-配置yum源"><span class="toc-number">1.1.4.</span> <span class="toc-text">4.配置yum源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装配置-JDK"><span class="toc-number">1.1.5.</span> <span class="toc-text">安装配置 JDK</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二-Ambari安装配置"><span class="toc-number">1.2.</span> <span class="toc-text">二. Ambari安装配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-安装ambari-server-服务"><span class="toc-number">1.2.1.</span> <span class="toc-text">1.安装ambari-server 服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-配置-ambari-server"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.配置 ambari-server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-配置-ambari-agent"><span class="toc-number">1.2.3.</span> <span class="toc-text">3.配置 ambari-agent</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三-部署-Hadoop-大数据集群"><span class="toc-number">1.3.</span> <span class="toc-text">三. 部署 Hadoop 大数据集群</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-使用-Ambari-平台点击如图红圈新建，使用向导一步步部署-Hadoop-大数据集群，具体如下"><span class="toc-number">1.3.1.</span> <span class="toc-text">1.使用 Ambari 平台点击如图红圈新建，使用向导一步步部署 Hadoop 大数据集群，具体如下</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-集群命名：根据向导第一步输入集群的名字，自己对想要建立的集群命名。"><span class="toc-number">1.3.2.</span> <span class="toc-text">2.集群命名：根据向导第一步输入集群的名字，自己对想要建立的集群命名。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-选择HDP-源：选择您使用的HDP-源，如图所示"><span class="toc-number">1.3.3.</span> <span class="toc-text">3.选择HDP 源：选择您使用的HDP 源，如图所示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-配置集群主机：输入集群的主机名，选择执行手动注册主机，不使用SSH，点击注册并确认按钮，进入下一步，如图所示："><span class="toc-number">1.3.4.</span> <span class="toc-text">4.配置集群主机：输入集群的主机名，选择执行手动注册主机，不使用SSH，点击注册并确认按钮，进入下一步，如图所示：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-主机确认：查看主机注册进度是否状态显示为成功，然后点击下一步，如图所示："><span class="toc-number">1.3.5.</span> <span class="toc-text">5.主机确认：查看主机注册进度是否状态显示为成功，然后点击下一步，如图所示：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-安装HDFS-，YARN-MapReduce2-ZooKeeper-，Ambari-Metrics个基本服务。点击下一步，如图所示："><span class="toc-number">1.3.6.</span> <span class="toc-text">6.安装HDFS ，YARN+MapReduce2,ZooKeeper ，Ambari Metrics个基本服务。点击下一步，如图所示：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-分配Master-主机：把选中服务对应的Master-组件分配给相应的主机，点击下一步如图所示："><span class="toc-number">1.3.7.</span> <span class="toc-text">7.分配Master 主机：把选中服务对应的Master 组件分配给相应的主机，点击下一步如图所示：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-分配选中服务中的Slaves-和Clients-组件到相应的主机上，点击下一步："><span class="toc-number">1.3.8.</span> <span class="toc-text">8.分配选中服务中的Slaves 和Clients 组件到相应的主机上，点击下一步：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-安装成功后，回到监控面板页面，如图所示："><span class="toc-number">1.3.9.</span> <span class="toc-text">9.安装成功后，回到监控面板页面，如图所示：</span></a></li></ol></li></ol></li></ol>
-         </div>
-   <script type="text/javascript">
-	function showToc(){
-		var toc_article = document.getElementById("toc-article");
-		var show_toc_btn = document.getElementById("show-toc-btn");
-		toc_article.setAttribute("style","display:block");
-		show_toc_btn.setAttribute("style","display:none");
-		};
-	function showBtn(){
-		var toc_article = document.getElementById("toc-article");
-		var show_toc_btn = document.getElementById("show-toc-btn");
-		toc_article.setAttribute("style","display:none");
-		show_toc_btn.setAttribute("style","display:block");
-		};
-   </script>
-      		
-<!-- 目录内容结束 -->
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<h1 id="大数据管理平台搭建（ambari）"><a href="#大数据管理平台搭建（ambari）" class="headerlink" title="大数据管理平台搭建（ambari）"></a>大数据管理平台搭建（ambari）</h1></blockquote>
-<p><strong>搭建步骤：</strong></p>
-<ol>
-<li>基础配置</li>
-<li>Ambari安装配置</li>
-<li>部署 Hadoop 大数据集群</li>
-</ol>
-<a id="more"></a>
-
-<h2 id="一-基础配置"><a href="#一-基础配置" class="headerlink" title="一.基础配置"></a>一.基础配置</h2><h3 id="1-Master要求虚拟机硬盘需大于50G，内存3G以上，node1和node2一样"><a href="#1-Master要求虚拟机硬盘需大于50G，内存3G以上，node1和node2一样" class="headerlink" title="1.Master要求虚拟机硬盘需大于50G，内存3G以上，node1和node2一样"></a>1.Master要求虚拟机硬盘需大于50G，内存3G以上，node1和node2一样</h3><img src="https://i.loli.net/2020/02/03/GTgjcbZNP3vlVUt.png" alt="32" style="zoom:50%;">
-
-<img src="https://i.loli.net/2020/02/06/uqwl8X9KPokgn63.png" alt="33" style="zoom:50%;">
-
-
-
-<img src="https://img-blog.csdnimg.cn/2020020700081965.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="74c" style="zoom:50%;">
-
-<p><strong>若是和我一样的IP：</strong></p>
-<p>修改虚拟网络：</p>
-<img src="https://img-blog.csdnimg.cn/20200207172659226.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="76c" style="zoom:50%;">
-
-<img src="https://img-blog.csdnimg.cn/20200207172756898.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="77c" style="zoom:50%;">
-
-<p>修改网络适配器：</p>
-<img src="https://img-blog.csdnimg.cn/2020020717382389.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="75c" style="zoom:50%;">
-
-<ul>
-<li><h3 id="2-搭建Ambari-前的软件准备"><a href="#2-搭建Ambari-前的软件准备" class="headerlink" title="2. 搭建Ambari 前的软件准备"></a>2. 搭建Ambari 前的软件准备</h3></li>
-</ul>
-<p><strong>包如图所示：</strong>（建议下载对应版本的安装包）</p>
-<p>搭建建Ambari 的环境管理平台及后续通过Ambari 自动化搭建Hadoop 集群所需要的软件</p>
-<img src="https://img-blog.csdnimg.cn/20200207172820766.png" alt="34c" style="zoom:50%;">
-
-
-
-<img src="https://img-blog.csdnimg.cn/20200207172840310.PNG" alt="78c" style="zoom:50%;">
-
-<ol>
-<li>centos 下载地址：<a href="https://www.centos.org/download/" target="_blank" rel="noopener">https://www.centos.org/download/</a></li>
-<li>ambari下载地址：<a href="http://docs.hortonworks.com/HDPDocuments/Ambari-2.4.1.0/bk_ambari-installation/content/ambari_repositories.html" target="_blank" rel="noopener">http://docs.hortonworks.com/HDPDocuments/Ambari-2.4.1.0/bk_ambari-installation/content/ambari_repositories.html</a></li>
-<li>HDP，HDP-UTILS下载地址：<a href="http://docs.hortonworks.com/HDPDocuments/Ambari-2.4.1.0/bk_ambari-installation/content/hdp_stack_repositories.html" target="_blank" rel="noopener">http://docs.hortonworks.com/HDPDocuments/Ambari-2.4.1.0/bk_ambari-installation/content/hdp_stack_repositories.html</a></li>
-<li>Jdk下载地址：<a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="noopener">https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a></li>
-</ol>
-<p>都可在百度网盘提取：<a href="https://pan.baidu.com/s/1MO0JzrwK1bf1VU3meBLZeA" target="_blank" rel="noopener">https://pan.baidu.com/s/1MO0JzrwK1bf1VU3meBLZeA</a>   提取码：8wfd</p>
-<p>对于百度网盘限速的可在我都个人网盘中提取：<a href="https://jxjjxy-my.sharepoint.com/:f:/g/personal/myclouddisk_t_odmail_cn/EpkYL0mr-DZKiGuIvyJ-Mx4BeNxRmLjWI4WRdLeNdvdwtQ?e=qoYFFX" target="_blank" rel="noopener">https://jxjjxy-my.sharepoint.com/:f:/g/personal/myclouddisk_t_odmail_cn/EpkYL0mr-DZKiGuIvyJ-Mx4BeNxRmLjWI4WRdLeNdvdwtQ?e=qoYFFX</a>    密码：123456</p>
-<ul>
-<li><h3 id="3-配置linux网卡"><a href="#3-配置linux网卡" class="headerlink" title="3.配置linux网卡"></a>3.配置linux网卡</h3></li>
-</ul>
-<p><strong>Master中：(node1,node2:同样操作，IPADDR分别改为：192.168.100.11，192.168.100.12)</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# vi &#x2F;etc&#x2F;sysconfig&#x2F;network-scripts&#x2F;ifcfg-ens33</span><br><span class="line">[root@master ~]# vi &#x2F;etc&#x2F;sysconfig&#x2F;network-scripts&#x2F;ifcfg-ens34</span><br></pre></td></tr></table></figure>
-
-<p>更改红框里面的</p>
-<img src="https://img-blog.csdnimg.cn/20200208182655910.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="36" style="zoom:50%;">
-
-
-
-<img src="https://img-blog.csdnimg.cn/20200208182759516.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="37" style="zoom:50%;">
-
-<p><strong>在所有节点：</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop firewalld</span><br><span class="line">systemctl disable firewalld</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi &#x2F;etc&#x2F;selinux&#x2F;config</span><br></pre></td></tr></table></figure>
-
-<img src="https://img-blog.csdnimg.cn/20200207174901211.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="79c" style="zoom:50%;">
-
-
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi &#x2F;etc&#x2F;hosts</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#加入以下代码:</span><br><span class="line">192.168.100.10 master</span><br><span class="line">192.168.100.11 node1</span><br><span class="line">192.168.100.12 node2</span><br></pre></td></tr></table></figure>
-
-<img src="https://i.loli.net/2020/02/06/7UWRF8xTwXrDYy3.png" alt="39" style="zoom:50%;">
-
-<ul>
-<li><h3 id="4-配置yum源"><a href="#4-配置yum源" class="headerlink" title="4.配置yum源"></a>4.配置yum源</h3><p><strong>Master中：</strong></p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# mv &#x2F;etc&#x2F;yum.repos.d&#x2F;* &#x2F;opt&#x2F;</span><br><span class="line">[root@master ~]# mkdir &#x2F;opt&#x2F;&#123;centos,ambari&#125;</span><br><span class="line">[root@master ~]# mount &#x2F;dev&#x2F;cdrom &#x2F;mnt&#x2F;</span><br><span class="line">mount: &#x2F;dev&#x2F;sr0 is write-protected, mounting read-only</span><br><span class="line">[root@master ~]# cp -rf &#x2F;mnt&#x2F;* &#x2F;opt&#x2F;centos&#x2F;</span><br></pre></td></tr></table></figure>
-
-<p>在master 的local.repo 里输入yum 源的配置信息</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# vi &#x2F;etc&#x2F;yum.repos.d&#x2F;local.repo</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[centos]</span><br><span class="line">name&#x3D;centos</span><br><span class="line">gpgcheck&#x3D;0</span><br><span class="line">enabled&#x3D;1</span><br><span class="line">baseurl&#x3D;file:&#x2F;&#x2F;&#x2F;opt&#x2F;centos</span><br><span class="line">[ambari]</span><br><span class="line">name&#x3D;ambari</span><br><span class="line">gpgcheck&#x3D;0</span><br><span class="line">enabled&#x3D;1</span><br><span class="line">baseurl&#x3D;file:&#x2F;&#x2F;&#x2F;opt&#x2F;ambari</span><br></pre></td></tr></table></figure>
-
-<p>用传输工具把ambari-2.4.1.0-centos7.tar.gz传输到/root目录下再把</p>
-<p>它解压并放到/opt/ambari 文件夹下。</p>
-<img src="https://i.loli.net/2020/02/06/CqOlEMcQSgG8NF3.png" alt="40" style="zoom:50%;">
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# tar -zxvf ambari-2.4.1.0-centos7.tar.gz		##解压到&#x2F;root下</span><br><span class="line">[root@master ~]# mv AMBARI-2.4.1.0&#x2F;centos7&#x2F;2.4.1.0-22&#x2F;* &#x2F;opt&#x2F;ambari&#x2F; </span><br><span class="line">[root@master ~]# cd &#x2F;opt&#x2F;ambari</span><br><span class="line">[root@master ambari]# ls</span><br><span class="line">ambari build.id build_metadata.txt changelog.txt repodata</span><br><span class="line">RPM-GPG-KEY smartsense</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# yum clean all</span><br><span class="line">[root@master ~]# yum list</span><br><span class="line">[root@master ~]# yum install -y httpd</span><br><span class="line">[root@master ~]# systemctl enable httpd.service</span><br><span class="line">[root@master ~]# systemctl start httpd.service</span><br><span class="line">[root@master ~]# systemctl status httpd.service</span><br></pre></td></tr></table></figure>
-
-<p>把HDP和HDP-UTILS-1.1.0.20放在<code>master</code>的/var/www/html中</p>
-<img src="https://i.loli.net/2020/02/06/er4khQ2xLfBwVXa.png" alt="71" style="zoom:50%;">
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@master &#x2F;]# yum -y install ntp</span><br><span class="line">[root@master &#x2F;]# vi &#x2F;etc&#x2F;ntp.conf</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">在ntp.conf 里注释或者删除以下四行</span><br><span class="line">server 0.centos.pool.ntp.org iburst</span><br><span class="line">server 1.centos.pool.ntp.org iburst</span><br><span class="line">server 2.centos.pool.ntp.org iburst</span><br><span class="line">server 3.centos.pool.ntp.org iburst</span><br><span class="line">添加以下两行</span><br><span class="line">server 127.127.1.0</span><br><span class="line">fudge 127.127.1.0 stratum 10</span><br></pre></td></tr></table></figure>
-
-<img src="https://i.loli.net/2020/02/06/65Vc94ejDx83rYF.png" alt="41" style="zoom:50%;">
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# yum -y install vsftpd</span><br><span class="line">[root@master ~]# vi &#x2F;etc&#x2F;vsftpd&#x2F;vsftpd.conf</span><br></pre></td></tr></table></figure>
-
-<p>在里面头部加入：anon_root=/opt如图</p>
-<img src="https://i.loli.net/2020/02/06/74ejXpSwCm5zL96.png" alt="67" style="zoom:50%;">
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# systemctl restart vsftpd</span><br><span class="line">[root@master ~]# systemctl enable vsftpd</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# vi &#x2F;etc&#x2F;yum.repos.d&#x2F;local.repo</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">#加入以下代码：</span><br><span class="line">[HDP]</span><br><span class="line">name&#x3D;HDP</span><br><span class="line">baseurl&#x3D;http:&#x2F;&#x2F;master&#x2F;HDP&#x2F;centos7&#x2F;2.x&#x2F;updates&#x2F;2.4.2.0</span><br><span class="line">gpgcheck&#x3D;0</span><br><span class="line">enabled&#x3D;1</span><br><span class="line">[HDP-UTILS]</span><br><span class="line">name&#x3D;HDP-UTILS</span><br><span class="line">baseurl&#x3D;http:&#x2F;&#x2F;master&#x2F;HDP-UTILS-1.1.0.20&#x2F;repos&#x2F;centos7</span><br><span class="line">gpgcheck&#x3D;0</span><br><span class="line">enabled&#x3D;1</span><br></pre></td></tr></table></figure>
-
-<img src="https://i.loli.net/2020/02/06/QUk42FMthRVaI5C.png" alt="38" style="zoom:50%;">
-
-<p><strong>在所有node 节点输入</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">[root@node1 ~]# rm -rf &#x2F;etc&#x2F;yum.repos.d&#x2F;*</span><br><span class="line">[root@node1 ~]# vi &#x2F;etc&#x2F;yum.repos.d&#x2F;local.repo</span><br><span class="line">[centos]</span><br><span class="line">name&#x3D;centos</span><br><span class="line">gpgcheck&#x3D;0</span><br><span class="line">enabled&#x3D;1</span><br><span class="line">baseurl&#x3D;ftp:&#x2F;&#x2F;master&#x2F;centos</span><br><span class="line">[ambari]</span><br><span class="line">name&#x3D;ambari</span><br><span class="line">gpgcheck&#x3D;0</span><br><span class="line">enabled&#x3D;1</span><br><span class="line">baseurl&#x3D;ftp:&#x2F;&#x2F;master&#x2F;ambari</span><br><span class="line">[HDP]</span><br><span class="line">name&#x3D;HDP</span><br><span class="line">baseurl&#x3D;http:&#x2F;&#x2F;master&#x2F;HDP&#x2F;centos7&#x2F;2.x&#x2F;updates&#x2F;2.4.2.0</span><br><span class="line">gpgcheck&#x3D;0</span><br><span class="line">enabled&#x3D;1</span><br><span class="line">[HDP-UTILS]</span><br><span class="line">name&#x3D;HDP-UTILS</span><br><span class="line">baseurl&#x3D;http:&#x2F;&#x2F;master&#x2F;HDP-UTILS-1.1.0.20&#x2F;repos&#x2F;centos7</span><br><span class="line">gpgcheck&#x3D;0</span><br><span class="line">enabled&#x3D;1</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@node1 ~]yum -y install ntpdate</span><br><span class="line">[root@node1 ~]ntpdate master</span><br><span class="line">[root@node1 ~]systemctl enable ntpdate</span><br></pre></td></tr></table></figure>
-
-<p><strong>Master节点输入：</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]yum install openssh-clients</span><br><span class="line">[root@master ~]ssh-keygen #连续按三个空格</span><br></pre></td></tr></table></figure>
-
-<img src="https://i.loli.net/2020/02/06/h5Vo9ld8pD3ERHP.png" alt="69" style="zoom:50%;">
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]ssh-copy-id master</span><br></pre></td></tr></table></figure>
-
-<img src="https://i.loli.net/2020/02/06/8DjEKG345mBOAld.png" alt="70" style="zoom:50%;">
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]ssh-copy-id node1</span><br><span class="line">[root@master ~]ssh-copy-id node2</span><br></pre></td></tr></table></figure>
-
-<p>ssh 登录远程主机查看是否成功:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# ssh node1</span><br><span class="line">[root@node1 ~]# ssh node2</span><br><span class="line">[root@node2 ~]# ssh master</span><br><span class="line">[root@master ~]#</span><br></pre></td></tr></table></figure>
-
-<img src="https://i.loli.net/2020/02/06/rFLaT4DEV5qG6cN.png" alt="43" style="zoom:50%;">
-
-<p><strong>禁用：Transparent Huge Pages</strong></p>
-<p><strong>在各节点</strong></p>
-<p>查看进程状态：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat &#x2F;sys&#x2F;kernel&#x2F;mm&#x2F;transparent_hugepage&#x2F;enabled</span><br></pre></td></tr></table></figure>
-
-<p>更改进程配置文件：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">echo never &gt; &#x2F;sys&#x2F;kernel&#x2F;mm&#x2F;transparent_hugepage&#x2F;enabled</span><br><span class="line">echo never &gt; &#x2F;sys&#x2F;kernel&#x2F;mm&#x2F;transparent_hugepage&#x2F;defrag</span><br></pre></td></tr></table></figure>
-
-<p>再次查看如图所示：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat &#x2F;sys&#x2F;kernel&#x2F;mm&#x2F;transparent_hugepage&#x2F;enabled</span><br></pre></td></tr></table></figure>
-
-<img src="https://i.loli.net/2020/02/06/icCvQbqfRBky975.png" alt="44" style="zoom:50%;">
-
-<ul>
-<li><h3 id="安装配置-JDK"><a href="#安装配置-JDK" class="headerlink" title="安装配置 JDK"></a>安装配置 JDK</h3></li>
-</ul>
-<p><strong>在所有节点中：</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir &#x2F;usr&#x2F;java</span><br></pre></td></tr></table></figure>
-
-<p>把jdk-8u161-linux-x64.tar.gz传到master节点的root下面</p>
-<p>分发给node1和node2：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# scp jdk-8u161-linux-x64.tar.gz @node1:&#x2F;root&#x2F;</span><br><span class="line">[root@master ~]# scp jdk-8u161-linux-x64.tar.gz @node2:&#x2F;root&#x2F;</span><br></pre></td></tr></table></figure>
-
-<p>所有节点执行解压到/usr/java中：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf jdk-8u161-linux-x64.tar.gz -C &#x2F;usr&#x2F;java&#x2F;</span><br></pre></td></tr></table></figure>
-
-<p>更改linux 的环境变量在 /etc/profile 添加</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_HOME&#x3D;&#x2F;usr&#x2F;java&#x2F;jdk1.8.0_161</span><br><span class="line">export PATH&#x3D;$JAVA_HOME&#x2F;bin:$PATH</span><br></pre></td></tr></table></figure>
-
-<img src="https://i.loli.net/2020/02/06/9Jur4j257NgCD1X.png" alt="45" style="zoom:50%;">
-
-<p>生效环境变量：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]#source &#x2F;etc&#x2F;profile</span><br><span class="line">[root@master usr]# java -version</span><br></pre></td></tr></table></figure>
-
-<p>安装成功如下图：</p>
-<img src="https://i.loli.net/2020/02/06/RwfQhqi9WUSAbjX.png" alt="46" style="zoom:50%;">
-
-<h2 id="二-Ambari安装配置"><a href="#二-Ambari安装配置" class="headerlink" title="二. Ambari安装配置"></a>二. Ambari安装配置</h2><p><strong>步骤：</strong></p>
-<ol>
-<li>安装：ambari-server</li>
-<li>配置：ambari-server</li>
-<li>安装及配置：ambari-agent</li>
-</ol>
-<p><strong>master主机操作：</strong></p>
-<ul>
-<li><h3 id="1-安装ambari-server-服务"><a href="#1-安装ambari-server-服务" class="headerlink" title="1.安装ambari-server 服务"></a>1.安装ambari-server 服务</h3></li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install ambari-server</span><br></pre></td></tr></table></figure>
-
-<p>安装配置数据库mariadb</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# yum -y install mariadb mariadb-server mysql-connector-java</span><br><span class="line">[root@master ~]# systemctl start mariadb</span><br><span class="line">[root@master ~]# systemctl enable mariadb</span><br></pre></td></tr></table></figure>
-
-<p>配置mariadb</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql_secure_installation</span><br></pre></td></tr></table></figure>
-
-<p>按 enter 确认后设置数据库 root 密码，我们这里设置为“000000”</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Remove anonymous users? [Y&#x2F;n] y</span><br><span class="line"></span><br><span class="line">Disallow root login remotely? [Y&#x2F;n] n</span><br><span class="line"></span><br><span class="line">Remove test database and access to it? [Y&#x2F;n] y</span><br><span class="line"></span><br><span class="line">Reload privilege tables now? [Y&#x2F;n] y</span><br></pre></td></tr></table></figure>
-
-<p>创建数据库：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# mysql -uroot -p000000</span><br><span class="line"></span><br><span class="line">MariaDB [(none)]&gt; create database ambari;</span><br><span class="line"></span><br><span class="line">MariaDB [(none)]&gt;grant all privileges on ambari.* to &#39;ambari&#39;@&#39;localhost&#39; identified by &#39;000000&#39;;</span><br><span class="line"></span><br><span class="line">MariaDB [(none)]&gt;grant all privileges on ambari.* to &#39;ambari&#39;@&#39;%&#39; identified by &#39;000000&#39;;</span><br><span class="line"></span><br><span class="line">MariaDB [(none)]&gt; use ambari;</span><br><span class="line"></span><br><span class="line">MariaDB [ambari]&gt; source &#x2F;var&#x2F;lib&#x2F;ambari-server&#x2F;resources&#x2F;Ambari-DDL-MySQL-CREATE.sql</span><br><span class="line"></span><br><span class="line">MariaDB [ambari]&gt; Ctrl+C -- exit!</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><h3 id="2-配置-ambari-server"><a href="#2-配置-ambari-server" class="headerlink" title="2.配置 ambari-server"></a>2.配置 ambari-server</h3></li>
-</ul>
-<p>在master 执行ambari-server 安装命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ambari-server setup</span><br></pre></td></tr></table></figure>
-
-<p>内容如图：</p>
-<img src="https://i.loli.net/2020/02/06/hsdAPk2QDbCrTf1.png" alt="47" style="zoom:50%;">
-
-<img src="https://i.loli.net/2020/02/06/qfbglNu5iAESWrd.png" alt="48" style="zoom:50%;">
-
-<p>启动 ambari-server 服务，命令如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ambari-server start</span><br></pre></td></tr></table></figure>
-
-<p>登陆界面 <a href="http://192.168.100.10:8080/如图所示，登录用户名密码为" target="_blank" rel="noopener">http://192.168.100.10:8080/如图所示，登录用户名密码为</a> <code>admin：admin</code></p>
-<img src="https://i.loli.net/2020/02/06/jAGWUByCMp8hVOF.png" alt="50" style="zoom:50%;">
-
-<ul>
-<li><h3 id="3-配置-ambari-agent"><a href="#3-配置-ambari-agent" class="headerlink" title="3.配置 ambari-agent"></a>3.配置 ambari-agent</h3></li>
-</ul>
-<p><strong>在所有节点执行安装ambari-agent 的命令</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# yum -y install ambari-agent</span><br></pre></td></tr></table></figure>
-
-<p>在/etc/ambari-agent/conf/ambari-agent.ini 文件下更改</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# vi &#x2F;etc&#x2F;ambari-agent&#x2F;conf&#x2F;ambari-agent.ini</span><br></pre></td></tr></table></figure>
-
-<img src="https://img-blog.csdnimg.cn/20200206234330245.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="51c" style="zoom:50%;">
-
-<p>openssl版本不匹配，因环境问题无法升级openssl版本，所以可以进行如下修改：</p>
-<p>因为python 2.7.5有的版本（或更高版本）增加了certificate verification，正是因为这个特性导致ambari-agent无法连接server。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@master ~]# vi &#x2F;etc&#x2F;python&#x2F;cert-verification.cfg</span><br><span class="line">修改verify&#x3D;disable</span><br></pre></td></tr></table></figure>
-
-<img src="https://img-blog.csdnimg.cn/2020020623493112.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="57c" style="zoom:50%;">
-
-<p>重启ambari-agent，命令如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ambari-agent restart</span><br></pre></td></tr></table></figure>
-
-<h2 id="三-部署-Hadoop-大数据集群"><a href="#三-部署-Hadoop-大数据集群" class="headerlink" title="三. 部署 Hadoop 大数据集群"></a>三. 部署 Hadoop 大数据集群</h2><ul>
-<li><h3 id="1-使用-Ambari-平台点击如图红圈新建，使用向导一步步部署-Hadoop-大数据集群，具体如下"><a href="#1-使用-Ambari-平台点击如图红圈新建，使用向导一步步部署-Hadoop-大数据集群，具体如下" class="headerlink" title="1.使用 Ambari 平台点击如图红圈新建，使用向导一步步部署 Hadoop 大数据集群，具体如下"></a>1.使用 Ambari 平台点击如图红圈新建，使用向导一步步部署 Hadoop 大数据集群，具体如下</h3></li>
-</ul>
-<img src="https://img-blog.csdnimg.cn/20200206234549701.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="52c" style="zoom:50%;">
-
-<ul>
-<li><h3 id="2-集群命名：根据向导第一步输入集群的名字，自己对想要建立的集群命名。"><a href="#2-集群命名：根据向导第一步输入集群的名字，自己对想要建立的集群命名。" class="headerlink" title="2.集群命名：根据向导第一步输入集群的名字，自己对想要建立的集群命名。"></a>2.集群命名：根据向导第一步输入集群的名字，自己对想要建立的集群命名。</h3></li>
-</ul>
-<p>我们命名为<code>ambari_demo</code>如图：</p>
-<img src="https://img-blog.csdnimg.cn/20200206234612841.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="53" style="zoom:50%;">
-
-<ul>
-<li><h3 id="3-选择HDP-源：选择您使用的HDP-源，如图所示"><a href="#3-选择HDP-源：选择您使用的HDP-源，如图所示" class="headerlink" title="3.选择HDP 源：选择您使用的HDP 源，如图所示"></a>3.选择HDP 源：选择您使用的HDP 源，如图所示</h3></li>
-</ul>
-<img src="https://img-blog.csdnimg.cn/20200207000341190.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="54c" style="zoom:50%;">
-
-<p><strong>红圈改为如下：</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">http:&#x2F;&#x2F;master&#x2F; HDP&#x2F;centos7&#x2F;2.x&#x2F;updates&#x2F;2.4.2.0</span><br><span class="line">http:&#x2F;&#x2F;master&#x2F; HDP-UTILS-1.1.0.20&#x2F;repos&#x2F;centos7</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><h3 id="4-配置集群主机：输入集群的主机名，选择执行手动注册主机，不使用SSH，点击注册并确认按钮，进入下一步，如图所示："><a href="#4-配置集群主机：输入集群的主机名，选择执行手动注册主机，不使用SSH，点击注册并确认按钮，进入下一步，如图所示：" class="headerlink" title="4.配置集群主机：输入集群的主机名，选择执行手动注册主机，不使用SSH，点击注册并确认按钮，进入下一步，如图所示："></a>4.配置集群主机：输入集群的主机名，选择执行手动注册主机，不使用SSH，点击注册并确认按钮，进入下一步，如图所示：</h3></li>
-</ul>
-<img src="https://img-blog.csdnimg.cn/20200206234732619.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="55c" style="zoom:50%;">
-
-<ul>
-<li><h3 id="5-主机确认：查看主机注册进度是否状态显示为成功，然后点击下一步，如图所示："><a href="#5-主机确认：查看主机注册进度是否状态显示为成功，然后点击下一步，如图所示：" class="headerlink" title="5.主机确认：查看主机注册进度是否状态显示为成功，然后点击下一步，如图所示："></a>5.主机确认：查看主机注册进度是否状态显示为成功，然后点击下一步，如图所示：</h3></li>
-</ul>
-<img src="https://img-blog.csdnimg.cn/20200206234949448.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="58c" style="zoom:50%;">
-
-<ul>
-<li><h3 id="6-安装HDFS-，YARN-MapReduce2-ZooKeeper-，Ambari-Metrics个基本服务。点击下一步，如图所示："><a href="#6-安装HDFS-，YARN-MapReduce2-ZooKeeper-，Ambari-Metrics个基本服务。点击下一步，如图所示：" class="headerlink" title="6.安装HDFS ，YARN+MapReduce2,ZooKeeper ，Ambari Metrics个基本服务。点击下一步，如图所示："></a>6.安装HDFS ，YARN+MapReduce2,ZooKeeper ，Ambari Metrics个基本服务。点击下一步，如图所示：</h3></li>
-</ul>
-<img src="https://img-blog.csdnimg.cn/20200206235007346.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="59c" style="zoom:50%;">
-
-<ul>
-<li><h3 id="7-分配Master-主机：把选中服务对应的Master-组件分配给相应的主机，点击下一步如图所示："><a href="#7-分配Master-主机：把选中服务对应的Master-组件分配给相应的主机，点击下一步如图所示：" class="headerlink" title="7.分配Master 主机：把选中服务对应的Master 组件分配给相应的主机，点击下一步如图所示："></a>7.分配Master 主机：把选中服务对应的Master 组件分配给相应的主机，点击下一步如图所示：</h3></li>
-</ul>
-<img src="https://img-blog.csdnimg.cn/20200206235027700.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="60c" style="zoom:50%;">
-
-<ul>
-<li><h3 id="8-分配选中服务中的Slaves-和Clients-组件到相应的主机上，点击下一步："><a href="#8-分配选中服务中的Slaves-和Clients-组件到相应的主机上，点击下一步：" class="headerlink" title="8.分配选中服务中的Slaves 和Clients 组件到相应的主机上，点击下一步："></a>8.<strong>分配选中服务中的Slaves 和Clients 组件到相应的主机上，点击下一步：</strong></h3></li>
-</ul>
-<img src="https://img-blog.csdnimg.cn/20200206235044292.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="61c" style="zoom:50%;">
-
-<p>输入密码：<code>admin</code></p>
-<img src="https://img-blog.csdnimg.cn/20200206235103399.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="62c" style="zoom:50%;">
-
-<p>点击部署：</p>
-<img src="https://img-blog.csdnimg.cn/20200206235337726.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="63c" style="zoom:50%;">
-
-<p>若出现如下报错：</p>
-<img src="https://img-blog.csdnimg.cn/20200206235356741.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="64c" style="zoom:50%;">
-
-<p><strong>分别在三台机子上执行</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@node2 ~]# yum remove -y snappy-1.1.0-3.el7.x86_64</span><br><span class="line">[root@node2 ~]# yum install -y snappy-1.0.5-1.el6.x86_64</span><br></pre></td></tr></table></figure>
-
-<p><strong>如出现如下报错：</strong></p>
-<img src="https://img-blog.csdnimg.cn/20200206235420473.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="73c" style="zoom:50%;">
-
-<p>缺少hdp-select</p>
-<p>解决：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yum clean all</span><br><span class="line">yum list</span><br><span class="line">yum install hdp-select*</span><br></pre></td></tr></table></figure>
-
-<img src="https://img-blog.csdnimg.cn/20200207172543639.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="65c" style="zoom:50%;">
-
-<ul>
-<li><h3 id="9-安装成功后，回到监控面板页面，如图所示："><a href="#9-安装成功后，回到监控面板页面，如图所示：" class="headerlink" title="9.安装成功后，回到监控面板页面，如图所示："></a>9.安装成功后，回到监控面板页面，如图所示：</h3></li>
-</ul>
-<img src="https://img-blog.csdnimg.cn/20200207173110244.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNTM0MDY5,size_16,color_FFFFFF,t_70" alt="66c" style="zoom:50%;">
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/img/zfb.png">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/img/wx.png">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">大数据</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/大数据//" class="article-tag-list-link color4">大数据</a>
+        			<a href="/categories/Linux笔记//" class="article-tag-list-link color3">Linux笔记</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/03/%E6%90%AD%E5%BB%BA%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%B9%B3%E5%8F%B0ambari/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2020/02/08/%E9%83%A8%E7%BD%B2%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%8E%AF%E5%A2%83Hadoop/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          部署大数据环境Hadoop
-        
-      </div>
-    </a>
   
   
-    <a href="/2020/01/21/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8Ayilia%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%88%E4%B8%89%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hexo博客搭建及yilia主题优化持续更新（三）</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#大数据管理平台搭建（ambari）"><span class="toc-number">1.</span> <span class="toc-text">大数据管理平台搭建（ambari）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#一-基础配置"><span class="toc-number">1.1.</span> <span class="toc-text">一.基础配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Master要求虚拟机硬盘需大于50G，内存3G以上，node1和node2一样"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.Master要求虚拟机硬盘需大于50G，内存3G以上，node1和node2一样</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-搭建Ambari-前的软件准备"><span class="toc-number">1.1.2.</span> <span class="toc-text">2. 搭建Ambari 前的软件准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-配置linux网卡"><span class="toc-number">1.1.3.</span> <span class="toc-text">3.配置linux网卡</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-配置yum源"><span class="toc-number">1.1.4.</span> <span class="toc-text">4.配置yum源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装配置-JDK"><span class="toc-number">1.1.5.</span> <span class="toc-text">安装配置 JDK</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二-Ambari安装配置"><span class="toc-number">1.2.</span> <span class="toc-text">二. Ambari安装配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-安装ambari-server-服务"><span class="toc-number">1.2.1.</span> <span class="toc-text">1.安装ambari-server 服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-配置-ambari-server"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.配置 ambari-server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-配置-ambari-agent"><span class="toc-number">1.2.3.</span> <span class="toc-text">3.配置 ambari-agent</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三-部署-Hadoop-大数据集群"><span class="toc-number">1.3.</span> <span class="toc-text">三. 部署 Hadoop 大数据集群</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-使用-Ambari-平台点击如图红圈新建，使用向导一步步部署-Hadoop-大数据集群，具体如下"><span class="toc-number">1.3.1.</span> <span class="toc-text">1.使用 Ambari 平台点击如图红圈新建，使用向导一步步部署 Hadoop 大数据集群，具体如下</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-集群命名：根据向导第一步输入集群的名字，自己对想要建立的集群命名。"><span class="toc-number">1.3.2.</span> <span class="toc-text">2.集群命名：根据向导第一步输入集群的名字，自己对想要建立的集群命名。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-选择HDP-源：选择您使用的HDP-源，如图所示"><span class="toc-number">1.3.3.</span> <span class="toc-text">3.选择HDP 源：选择您使用的HDP 源，如图所示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-配置集群主机：输入集群的主机名，选择执行手动注册主机，不使用SSH，点击注册并确认按钮，进入下一步，如图所示："><span class="toc-number">1.3.4.</span> <span class="toc-text">4.配置集群主机：输入集群的主机名，选择执行手动注册主机，不使用SSH，点击注册并确认按钮，进入下一步，如图所示：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-主机确认：查看主机注册进度是否状态显示为成功，然后点击下一步，如图所示："><span class="toc-number">1.3.5.</span> <span class="toc-text">5.主机确认：查看主机注册进度是否状态显示为成功，然后点击下一步，如图所示：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-安装HDFS-，YARN-MapReduce2-ZooKeeper-，Ambari-Metrics个基本服务。点击下一步，如图所示："><span class="toc-number">1.3.6.</span> <span class="toc-text">6.安装HDFS ，YARN+MapReduce2,ZooKeeper ，Ambari Metrics个基本服务。点击下一步，如图所示：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-分配Master-主机：把选中服务对应的Master-组件分配给相应的主机，点击下一步如图所示："><span class="toc-number">1.3.7.</span> <span class="toc-text">7.分配Master 主机：把选中服务对应的Master 组件分配给相应的主机，点击下一步如图所示：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-分配选中服务中的Slaves-和Clients-组件到相应的主机上，点击下一步："><span class="toc-number">1.3.8.</span> <span class="toc-text">8.分配选中服务中的Slaves 和Clients 组件到相应的主机上，点击下一步：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-安装成功后，回到监控面板页面，如图所示："><span class="toc-number">1.3.9.</span> <span class="toc-text">9.安装成功后，回到监控面板页面，如图所示：</span></a></li></ol></li></ol></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
-    </div>
-</aside>
-
-
-
-
-
-    <section id="comments" class="comments">
-      <style>
-        .comments{margin:30px;padding:10px;background:#fff}
-        @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
-      </style>
-      <div id="vcomment" class="comment"></div> 
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script>
-   var notify = 'true' == true ? true : false;
-   var verify = 'false' == true ? true : false;
-    window.onload = function() {
-        new Valine({
-            el: '.comment',
-            notify: notify,
-            verify: verify,
-            app_id: "dKcH2BBklIsbcELVaTXbgn0J-gzGzoHsz",
-            app_key: "oGK8iacXoH0v8OIsKwGS0LDj",
-            placeholder: "Just go go",
-            avatar:"retro"
-        });
-    }
-</script>
-  </section>
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
-
-
+    
 
 
           </div>
@@ -832,10 +259,10 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
-		isCategory: false,
+		isCategory: true,
 		open_in_new: false,
 		toc_hide_index: true,
 		root: "/",
