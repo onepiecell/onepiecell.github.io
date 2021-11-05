@@ -20,7 +20,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/8a8feac030224326aa6d106644440db7.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA572X5p2wMeS4lg==,size_20,color_FFFFFF,t_70,g_se,x_16">
 <meta property="article:published_time" content="2021-10-01T04:23:00.000Z">
-<meta property="article:modified_time" content="2021-11-05T16:15:25.360Z">
+<meta property="article:modified_time" content="2021-11-05T16:39:30.782Z">
 <meta property="article:author" content="Ramo Do">
 <meta property="article:tag" content="JAVA">
 <meta name="twitter:card" content="summary">
@@ -195,7 +195,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">4.8k字</span>
+        <span class="post-count">4.9k字</span>
       </span>
     </span>
 
@@ -290,70 +290,48 @@
 <p>2.垃圾收集机制</p>
 <h3 id="二-基础语法"><a href="#二-基础语法" class="headerlink" title="二.基础语法"></a>二.基础语法</h3><h4 id="1-标识符"><a href="#1-标识符" class="headerlink" title="1.标识符"></a>1.标识符</h4><p>Java 对各种<strong>变量、方法和类</strong>等要素命名时使用的字符序列称为标识符</p>
 <p><strong>凡是自己可以起名字的地方都叫标识符</strong></p>
-<h4 id="2-定义合法标识符规则："><a href="#2-定义合法标识符规则：" class="headerlink" title="2.定义合法标识符规则："></a>2.定义合法标识符规则：</h4><ol>
-<li>由26个英文字母大小写，数字：0-9 ，_或 $ 组成 </li>
-<li>数字不可以开头</li>
-<li>不可以使用关键字和保留字，但能包含关键字和保留字</li>
-<li>Java中严格区分大小写，长度无限制</li>
-<li>标识符不能包含空格。</li>
-</ol>
-<h4 id="3-Java中的名称命名规范："><a href="#3-Java中的名称命名规范：" class="headerlink" title="3.Java中的名称命名规范："></a>3.Java中的名称命名规范：</h4><ol>
-<li><p>包名：多单词组成时所有字母都小写：<strong>xxxyyyzzz</strong></p>
-</li>
-<li><p>类名，接口名：多单词组成时，所有单词的首字母大写：<strong>XxxYyyZzz</strong></p>
-</li>
-<li><p>变量名和函数名：多单词组成时，第一个单词首字母小写，第二个单词开始每个单词首字母大</p>
-<p>写：<strong>xxxYyyZzz</strong></p>
-</li>
-<li><p>常量名：所有字母都大写。多单词时每个单词用下划线连接：<strong>XXX_YYY_ZZZ</strong></p>
-</li>
-</ol>
-<h4 id="4-笔记概括"><a href="#4-笔记概括" class="headerlink" title="4.笔记概括"></a>4.笔记概括</h4><ol>
-<li><p>Java 的浮点型常量默认为 double 型，声明 float 型常量，<strong>须后加 ‘f’ 或 ‘F’</strong></p>
-</li>
-<li><p>boolean类型数据只允许取值<strong>true和false</strong>，不可以0或非 0 的整数替代true和false，这点和C语言不同</p>
-</li>
-<li><p>有多种类型的数据混合运算时，系统首先自动将所有数据转换成容量最大的那种数据类型，然后再进行计算</p>
-</li>
-<li><p>变量按被声明的位置划分：</p>
+<h4 id="2-定义合法标识符规则："><a href="#2-定义合法标识符规则：" class="headerlink" title="2.定义合法标识符规则："></a>2.定义合法标识符规则：</h4><p>1.由26个英文字母大小写，数字：0-9 ，_或 $ 组成 </p>
+<p>2.数字不可以开头</p>
+<p>3.不可以使用关键字和保留字，但能包含关键字和保留字</p>
+<p>4.Java中严格区分大小写，长度无限制</p>
+<p>5.标识符不能包含空格。</p>
+<h4 id="3-Java中的名称命名规范："><a href="#3-Java中的名称命名规范：" class="headerlink" title="3.Java中的名称命名规范："></a>3.Java中的名称命名规范：</h4><p>1.包名：多单词组成时所有字母都小写：<strong>xxxyyyzzz</strong></p>
+<p>2.类名，接口名：多单词组成时，所有单词的首字母大写：<strong>XxxYyyZzz</strong></p>
+<p>3.变量名和函数名：多单词组成时，第一个单词首字母小写，第二个单词开始每个单词首字母大写：<strong>xxxYyyZzz</strong></p>
+<p>4.常量名：所有字母都大写。多单词时每个单词用下划线连接：<strong>XXX_YYY_ZZZ</strong></p>
+<h4 id="4-笔记概括"><a href="#4-笔记概括" class="headerlink" title="4.笔记概括"></a>4.笔记概括</h4><p>1.Java 的浮点型常量默认为 double 型，声明 float 型常量，<strong>须后加 ‘f’ 或 ‘F’</strong></p>
+<p>2.boolean类型数据只允许取值<strong>true和false</strong>，不可以0或非 0 的整数替代true和false，这点和C语言不同</p>
+<p>3.有多种类型的数据混合运算时，系统首先自动将所有数据转换成容量最大的那种数据类型，然后再进行计算</p>
+<p>4.变量按被声明的位置划分：</p>
 <ul>
-<li><p><strong>成员变量：</strong>方法外部、类的内部定义的变量</p>
+<li><p>成员变量：方法外部、类的内部定义的变量</p>
 </li>
-<li><p><strong>局部变量：</strong>方法或语句块内部定义的变量   </p>
+<li><p>局部变量：方法或语句块内部定义的变量   </p>
 </li>
 </ul>
-</li>
-<li><p>变量按所属的数据类型划分：</p>
+<p>5.变量按所属的数据类型划分：</p>
 <ul>
-<li><strong>基本数据类型变量</strong>：byte,short,int ,long,float,double,char,boolean</li>
-<li><strong>引用数据类型变量</strong>：class（包括字符串）,interface,数组</li>
+<li>基本数据类型变量：byte,short,int ,long,float,double,char,boolean</li>
+<li>引用数据类型变量：class（包括字符串）,interface,数组</li>
 </ul>
-</li>
-<li><p><strong>byte,short,char</strong>之间不会相互转换，他们三者在计算时<strong>首先转换为int类型</strong></p>
-</li>
-<li><p><strong>instanceof</strong>检查是否为类的对象，如：man instanceof person</p>
-</li>
-<li><p>比较运算符“==”不能误写成（赋值）“=”</p>
-</li>
-<li><p><strong>AND(&amp;&amp;)，OR(||)</strong>单&amp;时，左边无论真假，右边都进行运算；</p>
+<p>6.<strong>byte,short,char</strong>之间不会相互转换，他们三者在计算时<strong>首先转换为int类型</strong></p>
+<p>7.<strong>instanceof</strong>检查是否为类的对象，如：man instanceof person</p>
+<p>8.比较运算符“==”不能误写成（赋值）“=”</p>
+<p>9.<strong>AND(&amp;&amp;)，OR(||)</strong>单&amp;时，左边无论真假，右边都进行运算；</p>
 <ul>
 <li>双&amp;时，如果左边为真，右边参与运算，如果左边为假，那么右边不参与运算</li>
 </ul>
-</li>
-<li><p>Java语言中声明数组时不能指定其长度(数组中元素的数)，例如：</p>
+<p>10.Java语言中声明数组时不能指定其长度(数组中元素的数)，例如：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">**int a[5];    &#x2F;&#x2F;非法**</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>数组元素下标从0开始；长度为n的数组合法下标取值范围: 0 - n-1；</p>
+
+<p>11.数组元素下标从0开始；长度为n的数组合法下标取值范围: 0 - n-1；</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">如int a[]&#x3D;new int[3];  可引用的数组元素为a[0]、a[1]、a[2]</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong>a.length</strong> 指明数组 a 的<strong>长度(元素个数)</strong>。</p>
-</li>
-<li><p>二维数组举例：</p>
+
+<p>12.<strong>a.length</strong> 指明数组 a 的<strong>长度(元素个数)</strong>。</p>
+<p>13.二维数组举例：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int [][] a &#x3D; &#123;&#123;1,2&#125;,&#123;3,4,0,9&#125;,&#123;5,6,7&#125;&#125;;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Java.util.Arrays类的 <strong>sort()</strong> 方法提供了数组元素<strong>排序功能</strong></p>
-</li>
-</ol>
+
+<p>14.Java.util.Arrays类的 <strong>sort()</strong> 方法提供了数组元素<strong>排序功能</strong></p>
 <h3 id="三-类和对象"><a href="#三-类和对象" class="headerlink" title="三.类和对象"></a>三.类和对象</h3><p>1.<strong>面向过程</strong><br>“面向过程”就是汽车启动是一个事件，汽车到站是另一个事件。在编程序的时候我们<strong>关心的是某一个事件</strong>。而不是汽车本身。我们分别对启动和到站编写程序。类似的还有修理等等。<br><strong>2.面向对象</strong><br>面向对象”需要建立一个汽车的实体，由实体引发事件。我们<strong>关心的是由汽车抽象成的对象</strong>,这个对象有自己的属性,像轮胎,颜色等;有自己的方法,像启动,行驶等.方法也就是汽车的行为.而不是汽车的每个事件。<br><strong>3.面向对象的三大特征</strong></p>
 <ul>
 <li>封装  (Encapsulation)</li>
@@ -416,7 +394,7 @@
 <ul>
 <li>堆中存的是<strong>对象（数据）</strong></li>
 <li>堆只是一块共享的内存</li>
-<li>堆解决的是数据存储的问题，即数据怎么放，放在哪儿<br>所有线程共享堆内存</li>
+<li>堆解决的是数据存储的问题，即数据怎么放，放在哪儿所有线程共享堆内存</li>
 </ul>
 <p><strong>7.信息的封装和隐藏</strong></p>
 <ol>
@@ -462,13 +440,9 @@
 
 <p><strong>9.函数的参数传递</strong> </p>
 <p>1.基本数据类型的参数传递——<strong>传值调用</strong>。</p>
-<ul>
-<li>将实参的一个<strong>拷贝值</strong>传递给相应的形参。</li>
-</ul>
+<p>​    将实参的一个<strong>拷贝值</strong>传递给相应的形参。</p>
 <p>2.引用类型的参数传递——<strong>传递地址调用</strong>。</p>
-<ul>
-<li>将对象的<strong>内存地址</strong>传递给形参。</li>
-</ul>
+<p>​    将对象的<strong>内存地址</strong>传递给形参。</p>
 <p><strong>10.函数的重载</strong></p>
 <ul>
 <li>在同一个类中可以定义多个<strong>同名方法</strong>—方法名重载(overload)</li>
@@ -541,7 +515,7 @@
 <li><p>一旦显式定义了构造方法，则系统不再提供默认构造方法</p>
 </li>
 </ul>
-<p><strong>5.this和super的区别</strong></p>
+<p><strong>6.this和super的区别</strong></p>
 <table>
 <thead>
 <tr>
@@ -567,9 +541,7 @@
 </tr>
 </tbody></table>
 <h4 id="二-多态"><a href="#二-多态" class="headerlink" title="二.多态"></a><strong>二.多态</strong></h4><p><strong>1.对象的多态：父类的引用指向之类的对象</strong></p>
-<ul>
-<li>可以直接应用在抽象类的接口上。</li>
-</ul>
+<p>​    可以直接应用在抽象类的接口上。</p>
 <p><strong>2.编译时，看左边；运行时，看右边。</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Person e &#x3D; new Student();</span><br></pre></td></tr></table></figure>
 
@@ -589,71 +561,48 @@
 
 <p><strong>2.多态小结</strong></p>
 <p><strong>作用：</strong></p>
-<ul>
-<li>提高代码的通用性，常称作接口重用</li>
-</ul>
+<p>​    提高代码的通用性，常称作接口重用</p>
 <p><strong>前提：</strong></p>
-<ul>
-<li>需要存在继承或者实现关系</li>
-<li>有方法重写</li>
-</ul>
+<p>​    需要存在继承或者实现关系</p>
+<p>​    有方法重写</p>
 <p><strong>成员方法：</strong></p>
-<ul>
-<li>编译时：要查看应用变量所声明的类中是否有所调用的方法</li>
-<li>运行时：调用实际new的对象所属的类中重写方法</li>
-</ul>
+<p>​    编译时：要查看应用变量所声明的类中是否有所调用的方法</p>
+<p>​    运行时：调用实际new的对象所属的类中重写方法</p>
 <p><strong>成员变量：</strong></p>
-<ul>
-<li>不具备多态性，只看引用变量所声明的类</li>
-</ul>
+<p>​    不具备多态性，只看引用变量所声明的类</p>
 <p><strong>多态必须具备三大特征：子类继承父类，子类覆盖父类，父类指向子类</strong></p>
 <p><strong>3.补充知识：</strong></p>
 <p><strong>1.instanceof 操作符</strong></p>
-<ul>
-<li>x instanceof A：<strong>检验x是否为类A的对象，返回值为boolean型</strong>。<br>要求x所属的类与类A必须是子类和父类的关系，否则编译错误。<br>如果x属于类A的子类B，x instanceof A值也为true。</li>
-</ul>
+<p>​    x instanceof A：<strong>检验x是否为类A的对象，返回值为boolean型</strong>。<br>要求x所属的类与类A必须是子类和父类的关系，否则编译错误。<br>如果x属于类A的子类B，x instanceof A值也为true。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">public class Person extends Object &#123;…&#125;</span><br><span class="line">public class Student extends Person &#123;…&#125;</span><br><span class="line">public class Graduate extends Person &#123;…&#125;</span><br><span class="line">-------------------------------------------------------------------</span><br><span class="line">public void method1(Person e) &#123;</span><br><span class="line">	if (e instanceof Person) </span><br><span class="line">		&#x2F;&#x2F; 处理Person类及其子类对象</span><br><span class="line">	if (e instanceof Student) </span><br><span class="line">		&#x2F;&#x2F;处理Student类及其子类对象</span><br><span class="line">	if (e instanceof Graduate)</span><br><span class="line">		&#x2F;&#x2F;处理Graduate类及其子类对象</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p><strong>2.对象类型转换 (Casting )</strong></p>
-<ul>
-<li><p>基本数据类型的Casting：</p>
+<p>基本数据类型的Casting：</p>
 <p>1).小的数据类型可以自动转换成大的数据类型<br>如long g=20;           double d=12.0f<br>可以把大的数据类型强制转换(casting)成小的数据类型<br>如 float f=(float)12.0   int a=(int)1200L</p>
-</li>
-<li><p>Java对象的强制类型</p>
+<p>Java对象的强制类型</p>
 <p>2).从子类到父类的类型转换可以自动进行<br><strong>从父类到子类的类型转换必须通过（强制类型转换)实现</strong><br><strong>无继承关系的引用类型间的转换是非法的</strong><br>在转换前可以使用instanceof操作符测试一个对象的类型</p>
-</li>
-</ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">public class Test &#123;</span><br><span class="line">	public void method(Person e) &#123; &#x2F;&#x2F; 设Person类中没有getschool()方法</span><br><span class="line">		System.out.pritnln(e.getschool()); &#x2F;&#x2F; 非法,编译时错误</span><br><span class="line"></span><br><span class="line">		if (e instanceof Student) &#123;</span><br><span class="line">			Student me &#x3D; (Student) e; &#x2F;&#x2F; 将e强制转换为Student类型，因为从父类到子类的类型转换必须通过（强制类型转换)实现</span><br><span class="line">			System.out.pritnln(me.getschool());</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	public static void main(Stirng args[]) &#123;</span><br><span class="line">		Test t &#x3D; new Test();</span><br><span class="line">		Student m &#x3D; new Student();</span><br><span class="line">		t.method(m);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p><strong>3.Object 类</strong></p>
-<ul>
-<li>Object类是所有Java类的根父类</li>
-<li>如果在类的声明中未使用extends关键字指明其父类，则默认父类为Object类 </li>
-</ul>
+<p>Object类是所有Java类的根父类</p>
+<p>如果在类的声明中未使用extends关键字指明其父类，则默认父类为Object类 </p>
 <p><strong>4.==操作符与equals方法</strong></p>
 <p><strong>“==”：</strong></p>
-<ul>
-<li><p>==：<strong>引用类型比较引用(</strong>是否指向同一个对象)；</p>
+<p>​    ==：<strong>引用类型比较引用(</strong>是否指向同一个对象)；</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Person p1&#x3D;new Person();   Person p2&#x3D;new Person();</span><br><span class="line">	if (p1&#x3D;&#x3D;p2)&#123;…&#125;</span><br><span class="line">	int a&#x3D;5; if(a&#x3D;&#x3D;6)&#123;…&#125; **基本类型比较值**；</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>用”==”进行比较时，符号两边的数据类型必须一致(可自动转换的基本数据类型除外)，否则编译出错</p>
+
+<p>​    用”==”进行比较时，符号两边的数据类型必须一致(可自动转换的基本数据类型除外)，否则编译出错</p>
 <p>==操作符比较的是值【变量(栈)内存中存放的对象的<strong>(堆)内存地址</strong>】，也就是用于比较变量所对应的堆内存中所存储的<strong>数值</strong>是否相同。</p>
-</li>
-</ul>
 <p><strong>“equals”:</strong></p>
-<ul>
-<li><p>equals()方法是Object类的方法，由于所有类都继承Object类，也就继承了equals()方法。<strong>只能比较引用类型，其作用与“==”相同,比较是否指向同一个对象。格式:obj1.equals(obj2)</strong></p>
-</li>
-<li><p>特例：当用equals()方法进行比较时，对类File、String、Date及封装类（Wrapper Class）来说，是<strong>比较类型及内容而不考虑引用</strong>的是否是同一个对象；<br>  <strong>原因</strong>：在这些类中覆盖了equals()方法。<br><strong>equal用于比较两个对象的值是否相同【不是比地址】</strong></p>
+<p>​    equals()方法是Object类的方法，由于所有类都继承Object类，也就继承了equals()方法。<strong>只能比较引用类型，其作用与“==”相同,比较是否指向同一个对象。格式:obj1.equals(obj2)</strong></p>
+<p>​    特例：当用equals()方法进行比较时，对类File、String、Date及封装类（Wrapper Class）来说，是<strong>比较类型及内容而不考虑引用</strong>的是否是同一个对象；<br><strong>原因</strong>：在这些类中覆盖了equals()方法。<br><strong>equal用于比较两个对象的值是否相同【不是比地址】</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">class TestEquals &#123;</span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">			MyDate m1 &#x3D; new MyDate(14, 3, 1996);</span><br><span class="line">			MyDate m2 &#x3D; new MyDate(14, 3, 1996);</span><br><span class="line">		if (m1 &#x3D;&#x3D; m2) &#123;</span><br><span class="line">			System.out.println(&quot;m1&#x3D;&#x3D;m2&quot;);</span><br><span class="line">		&#125; else &#123;</span><br><span class="line">			System.out.println(&quot;m1!&#x3D;m2&quot;); &#x2F;&#x2F; m1 !&#x3D; m2 √</span><br><span class="line">		&#125;</span><br><span class="line">		if (m1.equals(m2)) &#123;</span><br><span class="line">		System.out.println(&quot;m1 is equal to m2&quot;); &#x2F;&#x2F; m1 is equal to m2√</span><br><span class="line">		&#125; else &#123;</span><br><span class="line">			System.out.println(&quot;m1 is not equal to m2&quot;);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-</li>
-</ul>
 <p><strong>总结：</strong></p>
 <p><strong>1.对于对象来说：</strong></p>
-<p>1.特殊的类，如String、File、Data，使用==比较的是对象（<strong>对象的地址</strong>），equals比较的是<strong>内容</strong></p>
-<p>2.除了特殊的类之外的其他普通的类的对象，==和equals比较的都是对象（对象的内存地址）</p>
-<p>3.如果想改变某一个类的equals，不想用equals来比较对象的内存地址，就需要<strong>重写</strong>equals方法。</p>
+<p>1）.特殊的类，如String、File、Data，使用==比较的是对象（<strong>对象的地址</strong>），equals比较的是<strong>内容</strong></p>
+<p>2）.除了特殊的类之外的其他普通的类的对象，==和equals比较的都是对象（对象的内存地址）</p>
+<p>3）.如果想改变某一个类的equals，不想用equals来比较对象的内存地址，就需要<strong>重写</strong>equals方法。</p>
 <p><strong>2.toString 方法</strong><br>toString()方法在<strong>Object</strong>类中定义，其返回值是<strong>String</strong>类型，返回类名和它的引用地址。<br>在进行String与其它类型数据的连接操作时，自动调用<strong>toString()</strong>方法</p>
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Date now&#x3D;new Date();</span><br><span class="line">System.out.println(“now&#x3D;”+now);  </span><br><span class="line">相当于 System.out.println(“now&#x3D;”+now.toString());&#x2F;&#x2F;now&#x3D;Date@122345</span><br></pre></td></tr></table></figure>
 <p>可以根据需要在用户自定义类型中重写<strong>toString()</strong>方法,如String 类重写了toString()方法，返回字符串的值。<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s1&#x3D;“hello”;</span><br><span class="line">System.out.println(s1);&#x2F;&#x2F;相当于System.out.println(s1.toString());</span><br></pre></td></tr></table></figure><br><strong>3.在ToString1.java中的类A里覆盖toString方法，使其输出类A对象的cint属性值。</strong></p>
@@ -977,11 +926,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color3">AE</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">AE</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
