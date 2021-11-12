@@ -20,7 +20,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/8a8feac030224326aa6d106644440db7.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA572X5p2wMeS4lg==,size_20,color_FFFFFF,t_70,g_se,x_16">
 <meta property="article:published_time" content="2021-10-01T04:23:00.000Z">
-<meta property="article:modified_time" content="2021-11-05T16:39:30.782Z">
+<meta property="article:modified_time" content="2021-11-07T15:46:28.589Z">
 <meta property="article:author" content="Ramo Do">
 <meta property="article:tag" content="JAVA">
 <meta name="twitter:card" content="summary">
@@ -195,7 +195,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">4.9k字</span>
+        <span class="post-count">4.8k字</span>
       </span>
     </span>
 
@@ -588,14 +588,14 @@
 <p>如果在类的声明中未使用extends关键字指明其父类，则默认父类为Object类 </p>
 <p><strong>4.==操作符与equals方法</strong></p>
 <p><strong>“==”：</strong></p>
-<p>​    ==：<strong>引用类型比较引用(</strong>是否指向同一个对象)；</p>
+<p>​    1.==：<strong>引用类型</strong>比较<strong>地址</strong>；</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Person p1&#x3D;new Person();   Person p2&#x3D;new Person();</span><br><span class="line">	if (p1&#x3D;&#x3D;p2)&#123;…&#125;</span><br><span class="line">	int a&#x3D;5; if(a&#x3D;&#x3D;6)&#123;…&#125; **基本类型比较值**；</span><br></pre></td></tr></table></figure>
 
 <p>​    用”==”进行比较时，符号两边的数据类型必须一致(可自动转换的基本数据类型除外)，否则编译出错</p>
-<p>==操作符比较的是值【变量(栈)内存中存放的对象的<strong>(堆)内存地址</strong>】，也就是用于比较变量所对应的堆内存中所存储的<strong>数值</strong>是否相同。</p>
+<p>​    2.==:<strong>基本数据类型</strong>比较<strong>内容</strong>。</p>
 <p><strong>“equals”:</strong></p>
-<p>​    equals()方法是Object类的方法，由于所有类都继承Object类，也就继承了equals()方法。<strong>只能比较引用类型，其作用与“==”相同,比较是否指向同一个对象。格式:obj1.equals(obj2)</strong></p>
-<p>​    特例：当用equals()方法进行比较时，对类File、String、Date及封装类（Wrapper Class）来说，是<strong>比较类型及内容而不考虑引用</strong>的是否是同一个对象；<br><strong>原因</strong>：在这些类中覆盖了equals()方法。<br><strong>equal用于比较两个对象的值是否相同【不是比地址】</strong></p>
+<p>​    1.<strong>和”==“一样，比较对象地址，格式:obj1.equals(obj2)</strong></p>
+<p>​    2.特例：当用equals()方法进行比较时，对类File、String、Date及封装类（Wrapper Class）来说，即被<strong>重写比较内容</strong><br><strong>原因</strong>：在这些类中覆盖了equals()方法。<br><strong>equal用于比较两个对象的值是否相同【不是比地址】</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">class TestEquals &#123;</span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">			MyDate m1 &#x3D; new MyDate(14, 3, 1996);</span><br><span class="line">			MyDate m2 &#x3D; new MyDate(14, 3, 1996);</span><br><span class="line">		if (m1 &#x3D;&#x3D; m2) &#123;</span><br><span class="line">			System.out.println(&quot;m1&#x3D;&#x3D;m2&quot;);</span><br><span class="line">		&#125; else &#123;</span><br><span class="line">			System.out.println(&quot;m1!&#x3D;m2&quot;); &#x2F;&#x2F; m1 !&#x3D; m2 √</span><br><span class="line">		&#125;</span><br><span class="line">		if (m1.equals(m2)) &#123;</span><br><span class="line">		System.out.println(&quot;m1 is equal to m2&quot;); &#x2F;&#x2F; m1 is equal to m2√</span><br><span class="line">		&#125; else &#123;</span><br><span class="line">			System.out.println(&quot;m1 is not equal to m2&quot;);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p><strong>总结：</strong></p>
@@ -743,6 +743,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2021/11/11/Hadoop%E4%BC%AA%E5%88%86%E5%B8%83%E5%BC%8F%E6%90%AD%E5%BB%BA/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Hadoop伪分布式搭建
+        
+      </div>
+    </a>
   
   
     <a href="/2021/10/01/JavaCGblog/" id="article-nav-older" class="article-nav-link-wrap">
@@ -930,15 +939,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">大数据</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">JAVA</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">大数据</a>
               </li>
              
               <li class="article-tag-list-item">

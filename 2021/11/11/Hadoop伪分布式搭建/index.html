@@ -9,15 +9,43 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hexo</title>
+  <title>Hadoop伪分布式搭建 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="Hadoop伪分布式搭建Ubuntu系统Hadoop搭建步骤： 1.基础配置 2.Hadoop安装">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hadoop伪分布式搭建">
+<meta property="og:url" content="http://yoursite.com/2021/11/11/Hadoop%E4%BC%AA%E5%88%86%E5%B8%83%E5%BC%8F%E6%90%AD%E5%BB%BA/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Hadoop伪分布式搭建Ubuntu系统Hadoop搭建步骤： 1.基础配置 2.Hadoop安装">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/4c4e461800c24b05b4c3684bb1fdb9d8.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/9058f2368a4249a7b580be3b9cd02fe6.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/90d114ef824c47cb9b1c99d568b69cb8.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/b0aaf78e425f4132888d637819055b9c.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/ec21508caf4d41be9a7c1f41035bca0f.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAUmFtbyBEbw==,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/87b213bf94bd4d0b88d28bff747e7572.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/5f8d6e6658954353bab0743dc85fa4fd.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/3cbe86e89eb54badb147f4a03dd26acc.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAUmFtbyBEbw==,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/7c72230141d54d61b614f5834a5086c3.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/44b60d10cc0e4855acb481b1f4417da4.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAUmFtbyBEbw==,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/3f3633111adc4a9b91f6624406443142.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAUmFtbyBEbw==,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/47670be08ccb4e5db66dd8f272b81780.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAUmFtbyBEbw==,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/0bdf1cf90e83469fb758460fa24dff5f.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/da10dd9d9e414f7dabab990e15ad45c5.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAUmFtbyBEbw==,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/dc40781f55874ef690db4e455d43c97b.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAUmFtbyBEbw==,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/48518efd9d39443b85a678ae5ce66c3a.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/80bdad545ce04796a49741f57f407486.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/4c779e9bc3074399b90fbd64656bcbfe.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAUmFtbyBEbw==,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/75d3b809eaa04fc08564b2c522c444bc.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAUmFtbyBEbw==,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/41ec33482adb433dbb751fc147598e96.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAUmFtbyBEbw==,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/3d71eaa8436b4f3eb7e3dcc2ae6b0fd6.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAUmFtbyBEbw==,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/f2e991d1f74b48bda87852b016243f62.png">
+<meta property="article:published_time" content="2021-11-11T03:11:11.000Z">
+<meta property="article:modified_time" content="2021-11-12T17:43:26.807Z">
 <meta property="article:author" content="Ramo Do">
+<meta property="article:tag" content="大数据">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/4c4e461800c24b05b4c3684bb1fdb9d8.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -158,21 +186,24 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-Hadoop伪分布式搭建" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-Hadoop伪分布式搭建" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/11/11/Hadoop%E4%BC%AA%E5%88%86%E5%B8%83%E5%BC%8F%E6%90%AD%E5%BB%BA/">Hadoop伪分布式搭建</a>
+    <h1 class="article-title" itemprop="name">
+      Hadoop伪分布式搭建
     </h1>
   
 
         
         
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
 
 <a href="/2021/11/11/Hadoop%E4%BC%AA%E5%88%86%E5%B8%83%E5%BC%8F%E6%90%AD%E5%BB%BA/" class="archive-article-date">
   	<time datetime="2021-11-11T03:11:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-11-11</time>
@@ -203,7 +234,31 @@
         <!-- 添加完成 -->
       </header>
       <!-- 目录内容 -->
-		
+
+    <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+          <span class="btn-bg"></span>
+          <span class="btn-text">文章导航</span>
+          </p>
+	<div id="toc-article" class="toc-article">
+	    <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+		<strong class="toc-title">文章目录</strong>
+           <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Hadoop伪分布式搭建"><span class="toc-number">1.</span> <span class="toc-text">Hadoop伪分布式搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、-基础配置"><span class="toc-number">1.0.1.</span> <span class="toc-text">一、   基础配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、-Hadoop安装"><span class="toc-number">1.0.2.</span> <span class="toc-text">二、   Hadoop安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#一、-Hadoop测试"><span class="toc-number">1.0.3.</span> <span class="toc-text">一、   Hadoop测试</span></a></li></ol></li></ol></li></ol>
+         </div>
+   <script type="text/javascript">
+	function showToc(){
+		var toc_article = document.getElementById("toc-article");
+		var show_toc_btn = document.getElementById("show-toc-btn");
+		toc_article.setAttribute("style","display:block");
+		show_toc_btn.setAttribute("style","display:none");
+		};
+	function showBtn(){
+		var toc_article = document.getElementById("toc-article");
+		var show_toc_btn = document.getElementById("show-toc-btn");
+		toc_article.setAttribute("style","display:none");
+		show_toc_btn.setAttribute("style","display:block");
+		};
+   </script>
+      		
 <!-- 目录内容结束 -->
       
     
@@ -212,9 +267,207 @@
         <h1 id="Hadoop伪分布式搭建"><a href="#Hadoop伪分布式搭建" class="headerlink" title="Hadoop伪分布式搭建"></a>Hadoop伪分布式搭建</h1><p>Ubuntu系统Hadoop搭建步骤：</p>
 <p>1.基础配置</p>
 <p>2.Hadoop安装</p>
-        
+<a id="more"></a>
+
+<p>3.Hadoop测试</p>
+<p>基于hadoop基础环境配置后的步骤</p>
+<h3 id="一、-基础配置"><a href="#一、-基础配置" class="headerlink" title="一、   基础配置"></a>一、   基础配置</h3><p>1.关闭防火墙</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">root@wh-virtual-machine:~# sudo ufw disable</span><br><span class="line">Firewall stopped and disabled on system startup</span><br><span class="line">root@wh-virtual-machine:~# sudo ufw status</span><br><span class="line">Status: inactive</span><br><span class="line">root@wh-virtual-machine:~#</span><br></pre></td></tr></table></figure>
+
+<p>2.配置固定IP</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">root@wh-virtual-machine:~# vi &#x2F;etc&#x2F;network&#x2F;interfaces</span><br></pre></td></tr></table></figure>
+
+<img src="https://img-blog.csdnimg.cn/4c4e461800c24b05b4c3684bb1fdb9d8.png" alt="1" style="zoom:80%;">
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">root@wh-virtual-machine:~# &#x2F;etc&#x2F;init.d&#x2F;networking restart</span><br></pre></td></tr></table></figure>
+
+<p>3.安装ssh(用于Xshell或其它连接工具连接)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;查看,是否安装：</span><br><span class="line">root@wh-virtual-machine:~# sudo dpkg -1 | grep ssh</span><br><span class="line">&#x2F;&#x2F;否则，安装ssh：</span><br><span class="line">root@wh-virtual-machine:~# sudo apt-get install openssh-client</span><br><span class="line">root@wh-virtual-machine:~# sudo &#x2F;etc&#x2F;init.d&#x2F;ssh restart</span><br></pre></td></tr></table></figure>
+
+<p>4.安装JDK</p>
+<p>1.将JDK上传到/home/wh（根据实际情况）目录下</p>
+<img src="https://img-blog.csdnimg.cn/9058f2368a4249a7b580be3b9cd02fe6.png" alt="2" style="zoom:80%;">
+9d8.png)
+
+<p>2.解压到当前路径/home/wh下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">root@wh-virtual-machine:&#x2F;home&#x2F;wh# tar -zxvf jdk-8u201-linux-x64.tar.gz</span><br></pre></td></tr></table></figure>
+
+<img src="https://img-blog.csdnimg.cn/90d114ef824c47cb9b1c99d568b69cb8.png" alt="3" style="zoom:80%;">
+
+<p>3.配置环境变量</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">root@wh-virtual-machine:&#x2F;home&#x2F;wh# vi ~&#x2F;.bashrc</span><br></pre></td></tr></table></figure>
+
+<p>在末尾加入如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_HOME&#x3D;&#x2F;home&#x2F;wh&#x2F;jdk1.8.0_201</span><br><span class="line">export JRE_HOME&#x3D;$&#123;JAVA_HOME&#125;&#x2F;jre</span><br><span class="line">export CLASSPATH&#x3D;$JAVA_HOME&#x2F;lib&#x2F;dt.jar:$JAVA_HOME&#x2F;lib&#x2F;tools.jar:.</span><br><span class="line">export PATH&#x3D;$&#123;JAVA_HOME&#125;&#x2F;bin:$PATH</span><br></pre></td></tr></table></figure>
+
+<img src="https://img-blog.csdnimg.cn/b0aaf78e425f4132888d637819055b9c.png" alt="4" style="zoom:80%;">
+
+<p>使配置生效，并检验：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">root@wh-virtual-machine:&#x2F;home&#x2F;wh# source ~&#x2F;.bashrc </span><br><span class="line">root@wh-virtual-machine:&#x2F;home&#x2F;wh# java -version</span><br></pre></td></tr></table></figure>
+
+<img src="https://img-blog.csdnimg.cn/ec21508caf4d41be9a7c1f41035bca0f.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAUmFtbyBEbw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="5" style="zoom:80%;">
+
+<h3 id="二、-Hadoop安装"><a href="#二、-Hadoop安装" class="headerlink" title="二、   Hadoop安装"></a>二、   Hadoop安装</h3><p>1.修改主机名：</p>
+<p>为了安装方便和易于记忆，将这台主机的主机名修改为node1。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">root@wh-virtual-machine:~# hostnamectl set-hostname node1</span><br><span class="line">root@wh-virtual-machine:~# bash</span><br><span class="line">root@node1:~# vi &#x2F;etc&#x2F;hosts</span><br></pre></td></tr></table></figure>
+
+<img src="https://img-blog.csdnimg.cn/87b213bf94bd4d0b88d28bff747e7572.png" alt="6" style="zoom:80%;">
+
+<p>2.映射IP地址及主机名</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">root@node1:~# vi &#x2F;etc&#x2F;hosts</span><br></pre></td></tr></table></figure>
+
+<img src="https://img-blog.csdnimg.cn/5f8d6e6658954353bab0743dc85fa4fd.png" alt="7" style="zoom:80%;">
+
+<p>3.免密登录设置</p>
+<p>生成密钥对：连按三次回车</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">root@node1:~# ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
+
+<img src="https://img-blog.csdnimg.cn/3cbe86e89eb54badb147f4a03dd26acc.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAUmFtbyBEbw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="8" style="zoom: 67%;">
+
+<p>追加公钥：authorized_keys</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">root@node1:~# cat .ssh&#x2F;id_rsa.pub &gt;&gt; .ssh&#x2F;authorized_keys</span><br><span class="line">root@node1:~# ls ~&#x2F;.ssh&#x2F;</span><br><span class="line">authorized_keys  id_rsa  id_rsa.pub</span><br></pre></td></tr></table></figure>
+
+<img src="https://img-blog.csdnimg.cn/7c72230141d54d61b614f5834a5086c3.png" alt="9" style="zoom:80%;">
+
+<p>免密登录验证</p>
+<p>第一次需要密码，后面登录不需要密码，说明免密成功</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">root@node1:~# ssh node1</span><br><span class="line">root@node1:~# exit</span><br><span class="line">exit</span><br><span class="line">root@node1:~# ssh node1</span><br></pre></td></tr></table></figure>
+
+<img src="https://img-blog.csdnimg.cn/44b60d10cc0e4855acb481b1f4417da4.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAUmFtbyBEbw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="10" style="zoom: 69%;">
+
+<img src="https://img-blog.csdnimg.cn/3f3633111adc4a9b91f6624406443142.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAUmFtbyBEbw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="11" style="zoom:70%;">
+
+<p>4.安装Hadoop环境</p>
+<p>上传hadoop压缩包到/home/wh下：</p>
+<p>1.配置JDK环境变量</p>
+<p>在文件内容的末尾添加如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export HADOOP_HOME&#x3D;&#x2F;home&#x2F;wh&#x2F;hadoop-2.7.1</span><br><span class="line">export PATH&#x3D;$PATH:$HADOOP_HOME&#x2F;bin:$HADOOP_HOME&#x2F;sbin</span><br></pre></td></tr></table></figure>
+
+<img src="https://img-blog.csdnimg.cn/47670be08ccb4e5db66dd8f272b81780.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAUmFtbyBEbw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="12" style="zoom:80%;">
+
+<p>使配置生效</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">root@node1:&#x2F;home&#x2F;wh# source ~&#x2F;.bashrc</span><br></pre></td></tr></table></figure>
+
+<p>2.设置Hadoop配置文件</p>
+<p>安装Hadoop伪分布式模式，总共有5个文件需配置，它们分别是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hadoop-env.sh</span><br><span class="line">core-site.xml</span><br><span class="line">hdfs-site.xml</span><br><span class="line">mapred-site.xml</span><br><span class="line">yarn-site.xml。</span><br></pre></td></tr></table></figure>
+
+<p>这些配置文件的路径均在${HADOOP_HOME}/ etc/hadoop目录下。</p>
+<p>例：/home/（自己的用户名）/hadoop-2.7.1/etc/hadoop这个目录下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">root@node1:&#x2F;home&#x2F;wh# cd hadoop-2.7.1&#x2F;</span><br><span class="line">root@node1:&#x2F;home&#x2F;wh&#x2F;hadoop-2.7.1# ls</span><br><span class="line">bin  include  libexec      NOTICE.txt  sbin</span><br><span class="line">etc  lib      LICENSE.txt  README.txt  share</span><br><span class="line">root@node1:&#x2F;home&#x2F;wh&#x2F;hadoop-2.7.1# cd etc&#x2F;hadoop&#x2F;</span><br></pre></td></tr></table></figure>
+
+<img src="https://img-blog.csdnimg.cn/0bdf1cf90e83469fb758460fa24dff5f.png" alt="13" style="zoom:80%;">
+
+<p>1.配置hadoop-env.sh</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">root@node1:&#x2F;home&#x2F;wh&#x2F;hadoop-2.7.1&#x2F;etc&#x2F;hadoop# vi hadoop-env.sh</span><br></pre></td></tr></table></figure>
+
+<p>找到export JAVA_HOME一行，把行首的#去掉，并按实际修改JAVA_HOME的值。</p>
+<img src="https://img-blog.csdnimg.cn/da10dd9d9e414f7dabab990e15ad45c5.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAUmFtbyBEbw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="14" style="zoom:80%;">
+
+<p>注意：JAVA_HOME=/home/wh/jdk1.8.0_201，其中的wh为用户名，注意要按实际修改。</p>
+<p>2.配置core-site.xml</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">root@node1:&#x2F;home&#x2F;wh&#x2F;hadoop-2.7.1&#x2F;etc&#x2F;hadoop# vi core-site.xml</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;configuration&gt;</span><br><span class="line">--这里面加入如下代码--</span><br><span class="line">&lt;&#x2F;configuration&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;property&gt;</span><br><span class="line">      &lt;name&gt;fs.defaultFS&lt;&#x2F;name&gt;</span><br><span class="line">      &lt;value&gt;hdfs:&#x2F;&#x2F;node1:8020&lt;&#x2F;value&gt;</span><br><span class="line">  &lt;&#x2F;property&gt;</span><br><span class="line">  &lt;property&gt;</span><br><span class="line">      &lt;name&gt;hadoop.tmp.dir&lt;&#x2F;name&gt;</span><br><span class="line">      &lt;value&gt;&#x2F;home&#x2F;wh&#x2F;hadoop&#x2F;tmp&lt;&#x2F;value&gt;</span><br><span class="line">  &lt;&#x2F;property&gt;</span><br></pre></td></tr></table></figure>
+
+<img src="https://img-blog.csdnimg.cn/dc40781f55874ef690db4e455d43c97b.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAUmFtbyBEbw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="15" style="zoom:80%;">
+
+<p>3.配置hdfs-site.xml</p>
+<p>加入如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;property&gt;</span><br><span class="line">        &lt;name&gt;dfs.replication&lt;&#x2F;name&gt;</span><br><span class="line">        &lt;value&gt;1&lt;&#x2F;value&gt;</span><br><span class="line">&lt;&#x2F;property&gt;</span><br></pre></td></tr></table></figure>
+
+<img src="https://img-blog.csdnimg.cn/48518efd9d39443b85a678ae5ce66c3a.png" alt="16" style="zoom:80%;">
+
+<p>4.配置mapred-site.xml</p>
+<p>复制mapred-site.xml.template，生成mapred-site.xml。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">root@node1:&#x2F;home&#x2F;wh&#x2F;hadoop-2.7.1&#x2F;etc&#x2F;hadoop# cp mapred-site.xml.template mapred-site.xml</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">root@node1:&#x2F;home&#x2F;wh&#x2F;hadoop-2.7.1&#x2F;etc&#x2F;hadoop# vi mapred-site.xml</span><br></pre></td></tr></table></figure>
+
+<p>加入以下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;property&gt;</span><br><span class="line">    &lt;name&gt;mapreduce.framework.name&lt;&#x2F;name&gt;</span><br><span class="line">    &lt;value&gt;yarn&lt;&#x2F;value&gt;</span><br><span class="line">&lt;&#x2F;property&gt;</span><br></pre></td></tr></table></figure>
+
+<img src="https://img-blog.csdnimg.cn/80bdad545ce04796a49741f57f407486.png" alt="17" style="zoom: 80%;">
+
+<p>mapreduce.framework.name默认值为local，设置为yarn，让MapReduce程序运行在YARN框架上。</p>
+<p>5.配置yarn-site.xml。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">root@node1:&#x2F;home&#x2F;wh&#x2F;hadoop-2.7.1&#x2F;etc&#x2F;hadoop# vi yarn-site.xml</span><br></pre></td></tr></table></figure>
+
+<p>加入以下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;property&gt;</span><br><span class="line">    &lt;name&gt;yarn.resourcemanager.hostname&lt;&#x2F;name&gt;</span><br><span class="line">    &lt;value&gt;node1&lt;&#x2F;value&gt;</span><br><span class="line">&lt;&#x2F;property&gt;</span><br><span class="line">&lt;property&gt;</span><br><span class="line">    &lt;name&gt;yarn.nodemanager.aux-services&lt;&#x2F;name&gt;</span><br><span class="line">    &lt;value&gt;mapreduce_shuffle&lt;&#x2F;value&gt;</span><br><span class="line">&lt;&#x2F;property&gt;</span><br></pre></td></tr></table></figure>
+
+<img src="https://img-blog.csdnimg.cn/4c779e9bc3074399b90fbd64656bcbfe.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAUmFtbyBEbw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="18" style="zoom: 80%;">
+
+<p>3.格式化HDFS</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">root@node1:&#x2F;home&#x2F;wh# hdfs namenode –format</span><br><span class="line">root@node1:&#x2F;home&#x2F;wh# sudo chmod 777 hadoop-2.7.1</span><br></pre></td></tr></table></figure>
+
+<p>4.启动Hadoop</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">root@node1:&#x2F;home&#x2F;wh# start-all.sh</span><br><span class="line">root@node1:&#x2F;home&#x2F;wh# jps</span><br><span class="line">5440 NodeManager</span><br><span class="line">4819 NameNode</span><br><span class="line">5657 Jps</span><br><span class="line">5161 SecondaryNameNode</span><br><span class="line">4972 DataNode</span><br><span class="line">5310 ResourceManager</span><br></pre></td></tr></table></figure>
+
+<p>5.通过Web访问Hadoop</p>
+<p>1.在Windows浏览器中，输入网址192.168.100.10:50070可以查看NameNode和DataNode的信息。</p>
+<img src="https://img-blog.csdnimg.cn/75d3b809eaa04fc08564b2c522c444bc.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAUmFtbyBEbw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="19" style="zoom: 100%;">
+
+<p>2.在Windows浏览器中，输入网址192.168.100.10:50090可以查看SecondaryNameNode的信息</p>
+<img src="https://img-blog.csdnimg.cn/41ec33482adb433dbb751fc147598e96.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAUmFtbyBEbw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="20" style="zoom: 100%;">
+
+<p>3.在Windows浏览器中，输入网址192.168.100.10:8088可以查看集群所有应用程序的信息</p>
+<img src="https://img-blog.csdnimg.cn/3d71eaa8436b4f3eb7e3dcc2ae6b0fd6.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAUmFtbyBEbw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="21" style="zoom: 100%;">
+
+<h3 id="一、-Hadoop测试"><a href="#一、-Hadoop测试" class="headerlink" title="一、   Hadoop测试"></a>一、   Hadoop测试</h3><p>通过一个MapReduce程序测试Hadoop，统计HDFS中/input/data.txt文件内单词出现的次数。</p>
+<p>1.创建一个文本文件data.txt，并输入几个重复单词</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">root@node1:&#x2F;home&#x2F;wh# cd</span><br><span class="line">root@node1:~# </span><br><span class="line">root@node1:~# vi data.txt</span><br><span class="line">Hello JAVA</span><br><span class="line">Hello World</span><br><span class="line">Hello Hadoop</span><br><span class="line">Hello Linux</span><br><span class="line">Hello Hadoop</span><br><span class="line">Hello Python</span><br><span class="line">Hello JAVA</span><br><span class="line">Hello Hadoop</span><br></pre></td></tr></table></figure>
+
+<p>2.在HDFS创建input文件夹，并上传data.txt</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">root@node1:~# hdfs dfs -mkdir &#x2F;input</span><br><span class="line">root@node1:~# hdfs dfs -put data.txt &#x2F;input</span><br><span class="line">root@node1:~# hdfs dfs -ls &#x2F;input				&#x2F;&#x2F;查看是否成功</span><br><span class="line">Found 1 items</span><br><span class="line">-rw-r--r--   1 root supergroup        271 2021-11-10 21:25 &#x2F;input&#x2F;data.txt</span><br></pre></td></tr></table></figure>
+
+<p>3.运行MapReduce WordCount例子</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">root@node1:~# cd &#x2F;home&#x2F;wh&#x2F;hadoop-2.7.1&#x2F;share&#x2F;hadoop&#x2F;mapreduce&#x2F;</span><br><span class="line">root@node1:&#x2F;home&#x2F;wh&#x2F;hadoop-2.7.1&#x2F;share&#x2F;hadoop&#x2F;mapreduce# hadoop jar hadoop-mapreduce-examples-2.7.1.jar wordcount &#x2F;input&#x2F;data.txt &#x2F;output</span><br></pre></td></tr></table></figure>
+
+<p>查看结果:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">root@node1:&#x2F;home&#x2F;wh&#x2F;hadoop-2.7.1&#x2F;share&#x2F;hadoop&#x2F;mapreduce# hdfs dfs -cat &#x2F;output&#x2F;part-r-00000</span><br></pre></td></tr></table></figure>
+
+<img src="https://img-blog.csdnimg.cn/f2e991d1f74b48bda87852b016243f62.png" alt="22" style="zoom:80%;">
+
+<p>4.停止Hadoop进程</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">root@node1: # stop-all.sh</span><br></pre></td></tr></table></figure>
+
+
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/zfb.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/wx.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -245,250 +498,75 @@
 
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/11/11/Hadoop%E4%BC%AA%E5%88%86%E5%B8%83%E5%BC%8F%E6%90%AD%E5%BB%BA/">展开全文 >></a>
-        </p>
-      
 
       
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
         
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-  
-    <article id="post-Java学习手册" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/10/01/Java%E5%AD%A6%E4%B9%A0%E6%89%8B%E5%86%8C/">Java学习手册</a>
-    </h1>
-  
-
-        
-        
-
-<a href="/2021/10/01/Java%E5%AD%A6%E4%B9%A0%E6%89%8B%E5%86%8C/" class="archive-article-date">
-  	<time datetime="2021-10-01T04:23:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-01</time>
-</a>
-        
-        <!-- 开始添加字数统计-->
-        
-          <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">4.8k字</span>
-      </span>
+      </div>
     </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">18分</span>
-      </span>
-    </span>
+  </div>
 </div>
 
-          
-        <!-- 添加完成 -->
-      </header>
-      <!-- 目录内容 -->
-		
-<!-- 目录内容结束 -->
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="JAVA学习手册"><a href="#JAVA学习手册" class="headerlink" title="JAVA学习手册"></a>JAVA学习手册</h1><p><strong>学习内容：</strong></p>
-        
-      
-
-      
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2021/11/11/Hadoop%E4%BC%AA%E5%88%86%E5%B8%83%E5%BC%8F%E6%90%AD%E5%BB%BA/" alt="微信分享二维码">
     </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">JAVA</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/JAVA//" class="article-tag-list-link color5">JAVA</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/10/01/Java%E5%AD%A6%E4%B9%A0%E6%89%8B%E5%86%8C/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-  
-    <article id="post-JavaCGblog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/10/01/JavaCGblog/">Java【CG作业】</a>
-    </h1>
-  
-
-        
-        
-
-<a href="/2021/10/01/JavaCGblog/" class="archive-article-date">
-  	<time datetime="2021-10-01T04:23:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-10-01</time>
-</a>
-        
-        <!-- 开始添加字数统计-->
-        
-          <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">3.5k字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">17分</span>
-      </span>
-    </span>
 </div>
 
-          
-        <!-- 添加完成 -->
-      </header>
-      <!-- 目录内容 -->
-		
-<!-- 目录内容结束 -->
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="一-继承与多态"><a href="#一-继承与多态" class="headerlink" title="一.继承与多态"></a>一.继承与多态</h3><p><strong>1. 类的继承：构造方法与super</strong></p>
-<p>【问题描述】修改下图的Cylinder类，在Cylinder类中覆盖findArea()方法，计算圆柱的表面积。考虑：findVolume方法怎样做相应的修改？</p>
-<p>在TestCylinder类中创建Cylinder类的对象，设置圆柱的底面半径和高，并输出圆柱的表面积和体积。注：pi取值3.14</p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">JAVA</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/JAVA//" class="article-tag-list-link color5">JAVA</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/10/01/JavaCGblog/">展开全文 >></a>
-        </p>
-      
-
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2021/10/01/Java%E5%AD%A6%E4%B9%A0%E6%89%8B%E5%86%8C/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Java学习手册</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -503,124 +581,19 @@
         </div>
         
         
-    </div>
-</aside>
-
-
-
-
-
-
-  
-    <article id="post-《Linux就该这样学》1-5章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/03/%E3%80%8ALinux%E5%B0%B1%E8%AF%A5%E8%BF%99%E6%A0%B7%E5%AD%A6%E3%80%8B1-5%E7%AB%A0/">《Linux就该这样学》1~5章</a>
-    </h1>
-  
-
-        
-        
-
-<a href="/2020/03/03/%E3%80%8ALinux%E5%B0%B1%E8%AF%A5%E8%BF%99%E6%A0%B7%E5%AD%A6%E3%80%8B1-5%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2020-03-03T04:07:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-03</time>
-</a>
-        
-        <!-- 开始添加字数统计-->
-        
-          <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">5k字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">19分</span>
-      </span>
-    </span>
-</div>
-
-          
-        <!-- 添加完成 -->
-      </header>
-      <!-- 目录内容 -->
-		
-<!-- 目录内容结束 -->
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<h1 id="《Linux就该这样学》归纳总结"><a href="#《Linux就该这样学》归纳总结" class="headerlink" title="《Linux就该这样学》归纳总结"></a>《Linux就该这样学》归纳总结</h1></blockquote>
-<h2 id="一、环境部署"><a href="#一、环境部署" class="headerlink" title="一、环境部署"></a>一、环境部署</h2>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Linux笔记//" class="article-tag-list-link color3">Linux笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/03/03/%E3%80%8ALinux%E5%B0%B1%E8%AF%A5%E8%BF%99%E6%A0%B7%E5%AD%A6%E3%80%8B1-5%E7%AB%A0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Hadoop伪分布式搭建"><span class="toc-number">1.</span> <span class="toc-text">Hadoop伪分布式搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、-基础配置"><span class="toc-number">1.0.1.</span> <span class="toc-text">一、   基础配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、-Hadoop安装"><span class="toc-number">1.0.2.</span> <span class="toc-text">二、   Hadoop安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#一、-Hadoop测试"><span class="toc-number">1.0.3.</span> <span class="toc-text">一、   Hadoop测试</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
             </div>
         </div>
         
-        
     </div>
 </aside>
 
@@ -628,746 +601,42 @@
 
 
 
-
-  
-    <article id="post-AE设计精美电子相册送给爱的人" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/23/AE%E8%AE%BE%E8%AE%A1%E7%B2%BE%E7%BE%8E%E7%94%B5%E5%AD%90%E7%9B%B8%E5%86%8C%E9%80%81%E7%BB%99%E7%88%B1%E7%9A%84%E4%BA%BA/">AE设计超好看的相册视频送给爱的人</a>
-    </h1>
-  
-
-        
-        
-
-<a href="/2020/02/23/AE%E8%AE%BE%E8%AE%A1%E7%B2%BE%E7%BE%8E%E7%94%B5%E5%AD%90%E7%9B%B8%E5%86%8C%E9%80%81%E7%BB%99%E7%88%B1%E7%9A%84%E4%BA%BA/" class="archive-article-date">
-  	<time datetime="2020-02-23T05:24:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-23</time>
-</a>
-        
-        <!-- 开始添加字数统计-->
-        
-          <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">346字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">1分</span>
-      </span>
-    </span>
-</div>
-
-          
-        <!-- 添加完成 -->
-      </header>
-      <!-- 目录内容 -->
-		
-<!-- 目录内容结束 -->
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<h1 id="简单AE模板套用"><a href="#简单AE模板套用" class="headerlink" title="简单AE模板套用"></a>简单AE模板套用</h1></blockquote>
-<p><strong>具体步骤：</strong>（操作步骤简单，但对电脑配置需求有点高，我的配置是8G内存，i5,用着很吃力，建议16G内存以上）</p>
-<ol>
-<li>安装AE软件</li>
-<li>修改模板中的照片和文字</li>
-<li>导出并压缩</li>
-</ol>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">AE</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/AE//" class="article-tag-list-link color3">AE</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/23/AE%E8%AE%BE%E8%AE%A1%E7%B2%BE%E7%BE%8E%E7%94%B5%E5%AD%90%E7%9B%B8%E5%86%8C%E9%80%81%E7%BB%99%E7%88%B1%E7%9A%84%E4%BA%BA/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-  
-    <article id="post-部署大数据环境Hadoop" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/08/%E9%83%A8%E7%BD%B2%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%8E%AF%E5%A2%83Hadoop/">部署大数据环境Hadoop</a>
-    </h1>
-  
-
-        
-        
-
-<a href="/2020/02/08/%E9%83%A8%E7%BD%B2%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%8E%AF%E5%A2%83Hadoop/" class="archive-article-date">
-  	<time datetime="2020-02-08T05:56:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-08</time>
-</a>
-        
-        <!-- 开始添加字数统计-->
-        
-          <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">1.7k字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">9分</span>
-      </span>
-    </span>
-</div>
-
-          
-        <!-- 添加完成 -->
-      </header>
-      <!-- 目录内容 -->
-		
-<!-- 目录内容结束 -->
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<h1 id="大数据管理平台搭建（Hadoop）"><a href="#大数据管理平台搭建（Hadoop）" class="headerlink" title="大数据管理平台搭建（Hadoop）"></a>大数据管理平台搭建（Hadoop）</h1></blockquote>
-<p><strong>搭建步骤：</strong></p>
-<ol>
-<li>配置linux</li>
-<li>Hadoop安装</li>
-<li>配置hadoop</li>
-</ol>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">大数据</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/大数据//" class="article-tag-list-link color4">大数据</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/08/%E9%83%A8%E7%BD%B2%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%8E%AF%E5%A2%83Hadoop/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-  
-    <article id="postc-搭建大数据平台ambari" class="article article-type-postc  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/03/%E6%90%AD%E5%BB%BA%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%B9%B3%E5%8F%B0ambari/">搭建大数据平台ambari</a>
-    </h1>
-  
-
-        
-        
-
-<a href="/2020/02/03/%E6%90%AD%E5%BB%BA%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%B9%B3%E5%8F%B0ambari/" class="archive-article-date">
-  	<time datetime="2020-02-03T06:20:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-03</time>
-</a>
-        
-        <!-- 开始添加字数统计-->
-        
-          <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">2k字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">10分</span>
-      </span>
-    </span>
-</div>
-
-          
-        <!-- 添加完成 -->
-      </header>
-      <!-- 目录内容 -->
-		
-<!-- 目录内容结束 -->
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<h1 id="大数据管理平台搭建（ambari）"><a href="#大数据管理平台搭建（ambari）" class="headerlink" title="大数据管理平台搭建（ambari）"></a>大数据管理平台搭建（ambari）</h1></blockquote>
-<p><strong>搭建步骤：</strong></p>
-<ol>
-<li>基础配置</li>
-<li>Ambari安装配置</li>
-<li>部署 Hadoop 大数据集群</li>
-</ol>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">大数据</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/大数据//" class="article-tag-list-link color4">大数据</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/03/%E6%90%AD%E5%BB%BA%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%B9%B3%E5%8F%B0ambari/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-  
-    <article id="post-Hexo博客搭建及yilia主题优化持续更新（三）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/21/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8Ayilia%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%88%E4%B8%89%EF%BC%89/">Hexo博客搭建及yilia主题优化持续更新（三）</a>
-    </h1>
-  
-
-        
-        
-
-<a href="/2020/01/21/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8Ayilia%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%88%E4%B8%89%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-01-21T14:19:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-21</time>
-</a>
-        
-        <!-- 开始添加字数统计-->
-        
-          <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">2.4k字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">12分</span>
-      </span>
-    </span>
-</div>
-
-          
-        <!-- 添加完成 -->
-      </header>
-      <!-- 目录内容 -->
-		
-<!-- 目录内容结束 -->
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<h1 id="三、-yilia主题优化"><a href="#三、-yilia主题优化" class="headerlink" title="三、 yilia主题优化"></a><strong>三、 yilia主题优化</strong></h1></blockquote>
-<p>关于yilia主题优化知乎很全面：<a href="https://zhuanlan.zhihu.com/p/44213627" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/44213627</a></p>
-<p>关于next主题的搭建很全面：<a href="http://www.zhangblog.com/2019/06/11/hexo01/" target="_blank" rel="noopener">http://www.zhangblog.com/2019/06/11/hexo01/</a></p>
-<p><strong>优化内容：</strong></p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/hexo//" class="article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/01/21/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8Ayilia%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%88%E4%B8%89%EF%BC%89/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-  
-    <article id="post-Hexo博客搭建及yilia主题优化持续更新（二）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/20/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8Ayilia%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%88%E4%BA%8C%EF%BC%89/">Hexo博客搭建及yilia主题优化持续更新（二）</a>
-    </h1>
-  
-
-        
-        
-
-<a href="/2020/01/20/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8Ayilia%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%88%E4%BA%8C%EF%BC%89/" class="archive-article-date">
-  	<time datetime="2020-01-20T12:59:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-20</time>
-</a>
-        
-        <!-- 开始添加字数统计-->
-        
-          <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">444字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">1分</span>
-      </span>
-    </span>
-</div>
-
-          
-        <!-- 添加完成 -->
-      </header>
-      <!-- 目录内容 -->
-		
-<!-- 目录内容结束 -->
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<h1 id="二、-Hexo博客部署到GitHub"><a href="#二、-Hexo博客部署到GitHub" class="headerlink" title="二、 Hexo博客部署到GitHub"></a>二、 Hexo博客部署到GitHub</h1></blockquote>
-<p><a href="https://zhuanlan.zhihu.com/p/44213627" target="_blank" rel="noopener">感谢这篇比较全面的博客搭建教程</a></p>
-<p><strong>搭建步骤：</strong></p>
-<ol>
-<li>安装git</li>
-<li>创建GitHub账号及文件配置</li>
-<li>更换yilia主题</li>
-</ol>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/hexo//" class="article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/01/20/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8Ayilia%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%88%E4%BA%8C%EF%BC%89/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-  
-    <article id="post-Hexo博客搭建及yilia主题优化持续跟新(一)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/20/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8Ayilia%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E6%8C%81%E7%BB%AD%E8%B7%9F%E6%96%B0(%E4%B8%80)/">Hexo博客搭建及yilia主题优化持续更新（一）</a>
-    </h1>
-  
-
-        
-        
-
-<a href="/2020/01/20/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8Ayilia%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E6%8C%81%E7%BB%AD%E8%B7%9F%E6%96%B0(%E4%B8%80)/" class="archive-article-date">
-  	<time datetime="2020-01-20T06:31:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-20</time>
-</a>
-        
-        <!-- 开始添加字数统计-->
-        
-          <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">292字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">1分</span>
-      </span>
-    </span>
-</div>
-
-          
-        <!-- 添加完成 -->
-      </header>
-      <!-- 目录内容 -->
-		
-<!-- 目录内容结束 -->
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<h1 id="一、-Hexo博客本地部署"><a href="#一、-Hexo博客本地部署" class="headerlink" title="一、      Hexo博客本地部署"></a><strong>一、</strong>      <strong>Hexo博客本地部署</strong></h1></blockquote>
-<p><strong>搭建步骤：</strong></p>
-<ol>
-<li>安装node.js</li>
-<li>安装git</li>
-<li>安装Hexo</li>
-<li>运行本地服务器</li>
-</ol>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/hexo//" class="article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/01/20/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8F%8Ayilia%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E6%8C%81%E7%BB%AD%E8%B7%9F%E6%96%B0(%E4%B8%80)/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
+    <section id="comments" class="comments">
+      <style>
+        .comments{margin:30px;padding:10px;background:#fff}
+        @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+      </style>
+      <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'true' == true ? true : false;
+   var verify = 'false' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "dKcH2BBklIsbcELVaTXbgn0J-gzGzoHsz",
+            app_key: "oGK8iacXoH0v8OIsKwGS0LDj",
+            placeholder: "Just go go",
+            avatar:"retro"
+        });
+    }
+</script>
+  </section>
 
   
   
+  
+
+  
+
+  
+
+  
+
+
 
 
           </div>
@@ -1401,8 +670,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
