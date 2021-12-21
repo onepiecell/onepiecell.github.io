@@ -11,12 +11,12 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Hadoop伪分布式搭建 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Hadoop伪分布式搭建Ubuntu系统Hadoop搭建步骤： 1.基础配置 2.Hadoop安装">
+  <meta name="description" content="Hadoop伪分布式搭建 Ubuntu系统Hadoop搭建步骤： 1.基础配置 2.Hadoop安装">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hadoop伪分布式搭建">
 <meta property="og:url" content="http://yoursite.com/2021/11/11/Hadoop%E4%BC%AA%E5%88%86%E5%B8%83%E5%BC%8F%E6%90%AD%E5%BB%BA/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Hadoop伪分布式搭建Ubuntu系统Hadoop搭建步骤： 1.基础配置 2.Hadoop安装">
+<meta property="og:description" content="Hadoop伪分布式搭建 Ubuntu系统Hadoop搭建步骤： 1.基础配置 2.Hadoop安装">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/4c4e461800c24b05b4c3684bb1fdb9d8.png">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/9058f2368a4249a7b580be3b9cd02fe6.png">
@@ -41,7 +41,7 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/3d71eaa8436b4f3eb7e3dcc2ae6b0fd6.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAUmFtbyBEbw==,size_20,color_FFFFFF,t_70,g_se,x_16">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/f2e991d1f74b48bda87852b016243f62.png">
 <meta property="article:published_time" content="2021-11-11T03:11:11.000Z">
-<meta property="article:modified_time" content="2021-11-12T17:43:26.807Z">
+<meta property="article:modified_time" content="2021-12-21T05:28:45.418Z">
 <meta property="article:author" content="Ramo Do">
 <meta property="article:tag" content="大数据">
 <meta name="twitter:card" content="summary">
@@ -216,7 +216,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">1.4k字</span>
+        <span class="post-count">1.5k字</span>
       </span>
     </span>
 
@@ -264,7 +264,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Hadoop伪分布式搭建"><a href="#Hadoop伪分布式搭建" class="headerlink" title="Hadoop伪分布式搭建"></a>Hadoop伪分布式搭建</h1><p>Ubuntu系统Hadoop搭建步骤：</p>
+        <blockquote>
+<h1 id="Hadoop伪分布式搭建"><a href="#Hadoop伪分布式搭建" class="headerlink" title="Hadoop伪分布式搭建"></a>Hadoop伪分布式搭建</h1></blockquote>
+<p>Ubuntu系统Hadoop搭建步骤：</p>
 <p>1.基础配置</p>
 <p>2.Hadoop安装</p>
 <a id="more"></a>
@@ -338,15 +340,17 @@
 <img src="https://img-blog.csdnimg.cn/3f3633111adc4a9b91f6624406443142.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAUmFtbyBEbw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="11" style="zoom:70%;">
 
 <p>4.安装Hadoop环境</p>
-<p>上传hadoop压缩包到/home/wh下：</p>
-<p>1.配置JDK环境变量</p>
+<p>上传hadoop压缩包到/home/wh下并解压到该目录下</p>
+<p>1.配置环境变量</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">root@node1:~# vi ~&#x2F;.bashrc</span><br></pre></td></tr></table></figure>
+
 <p>在文件内容的末尾添加如下代码：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export HADOOP_HOME&#x3D;&#x2F;home&#x2F;wh&#x2F;hadoop-2.7.1</span><br><span class="line">export PATH&#x3D;$PATH:$HADOOP_HOME&#x2F;bin:$HADOOP_HOME&#x2F;sbin</span><br></pre></td></tr></table></figure>
 
 <img src="https://img-blog.csdnimg.cn/47670be08ccb4e5db66dd8f272b81780.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAUmFtbyBEbw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="12" style="zoom:80%;">
 
 <p>使配置生效</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">root@node1:&#x2F;home&#x2F;wh# source ~&#x2F;.bashrc</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">root@node1:&#x2F;home&#x2F;wh# source ~&#x2F;.bashrc</span><br><span class="line">root@node1:&#x2F;home&#x2F;wh# whereis hdfs     &#x2F;&#x2F;能正确显示hdfs路径，说明配置正常</span><br></pre></td></tr></table></figure>
 
 <p>2.设置Hadoop配置文件</p>
 <p>安装Hadoop伪分布式模式，总共有5个文件需配置，它们分别是：</p>
@@ -559,6 +563,15 @@
   
 <nav id="article-nav">
   
+    <a href="/2021/11/11/Hadoop%E5%AE%8C%E5%85%A8%E5%88%86%E5%B8%83%E5%BC%8F%E6%90%AD%E5%BB%BA/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Hadoop完全分布式搭建
+        
+      </div>
+    </a>
+  
   
     <a href="/2021/10/01/Java%E5%AD%A6%E4%B9%A0%E6%89%8B%E5%86%8C/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">Java学习手册</div>
@@ -754,6 +767,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">JAVA</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">操作系统</a>
               </li>
              
               <li class="article-tag-list-item">
